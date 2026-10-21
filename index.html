@@ -186,6 +186,24 @@ nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
 .face-grid .card .ic{margin:0 auto 18px}
 .face-grid .card h3{font-size:18px;margin-bottom:8px}
 .face-grid .card p{font-size:14.5px}
+/* quiz "olhar ideal" */
+.quiz{max-width:560px;margin:36px auto 0;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow-sm);padding:clamp(24px,4vw,40px);text-align:center}
+.quiz .q-step{display:none}
+.quiz .q-step.active{display:block;animation:qfade .4s var(--ease)}
+@keyframes qfade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.quiz .q-dots{display:flex;gap:7px;justify-content:center;margin-bottom:24px}
+.quiz .q-dots i{width:8px;height:8px;border-radius:50%;background:var(--pink-soft);transition:.3s}
+.quiz .q-dots i.on{background:var(--pink);transform:scale(1.15)}
+.quiz .q-step>h3{font-family:"Playfair Display",serif;font-size:clamp(19px,3vw,24px);margin-bottom:22px;color:var(--ink)}
+.quiz .q-opts{display:flex;flex-direction:column;gap:12px}
+.quiz .q-opts button{font:inherit;font-weight:600;color:var(--ink);background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:15px 18px;cursor:pointer;transition:.25s var(--ease)}
+.quiz .q-opts button:hover{border-color:var(--pink);background:var(--pink-wash);color:var(--pink);transform:translateY(-1px)}
+.quiz .q-back{display:inline-block;margin-top:16px;color:var(--ink-soft);font-size:13px;cursor:pointer}
+.quiz .q-result .r-ic{width:66px;height:66px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;margin:0 auto 16px}
+.quiz .q-result .r-ic svg{width:30px;height:30px;color:var(--pink)}
+.quiz .q-result .r-svc{font-family:"Playfair Display",serif;font-size:24px;color:var(--pink);margin:2px 0 10px}
+.quiz .q-result p{color:var(--ink-soft);margin-bottom:22px;font-size:15.5px}
+.quiz .q-restart{display:inline-block;margin-top:16px;color:var(--ink-soft);font-size:13px;text-decoration:underline;cursor:pointer}
 
 /* ===== BIO ===== */
 .bio{background:var(--pink-wash)}
@@ -561,6 +579,25 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   </div>
 </section>
 
+<!-- ===== SERVICES ===== -->
+<section class="sec bio" id="servicos" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nossos serviços</span>
+      <h2>Tudo para valorizar o seu <span class="ac">rosto</span></h2>
+      <p>As técnicas e o desenho ideais são definidos no seu atendimento, sempre a partir do seu rosto e do seu gosto.</p>
+    </div>
+    <div class="cardgrid">
+      <article class="card reveal"><span class="ic"><svg><use href="#eye"/></svg></span><h3>Extensão de cílios</h3><p>O realce que faz você acordar pronta todos os dias. Fio a fio, do efeito natural ao volume marcante, com mapeamento do olhar e manutenção impecável.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20extens%C3%A3o%20de%20c%C3%ADlios.%20Quero%20agendar." target="_blank" rel="noopener">Agendar cílios <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d1"><span class="ic"><svg><use href="#brow"/></svg></span><h3>Design de sobrancelhas</h3><p>O formato ideal com simetria e proporção, respeitando os traços únicos do seu rosto. Com acabamento em henna para um olhar mais harmônico.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20design%20de%20sobrancelhas.%20Quero%20agendar." target="_blank" rel="noopener">Agendar sobrancelhas <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d2"><span class="ic"><svg><use href="#drop"/></svg></span><h3>Tintura de fios brancos</h3><p>Coloração das sobrancelhas que cobre os fios brancos com aspecto natural, uniforme e duradouro.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20na%20tintura%20de%20sobrancelhas." target="_blank" rel="noopener">Agendar tintura <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal"><span class="ic"><svg><use href="#spark"/></svg></span><h3>Micropigmentação</h3><p>Sobrancelhas e lábios com pigmento na medida certa: naturalidade que dura e praticidade no dia a dia.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20micropigmenta%C3%A7%C3%A3o.%20Quero%20agendar." target="_blank" rel="noopener">Agendar micropigmentação <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d1"><span class="ic"><svg><use href="#glow"/></svg></span><h3>Limpeza de pele</h3><p>Limpeza de pele facial e corporal para uma pele mais saudável, renovada e com brilho natural.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20limpeza%20de%20pele." target="_blank" rel="noopener">Agendar limpeza <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d2"><span class="ic"><svg><use href="#moon"/></svg></span><h3>Banho de Lua</h3><p>Tratamento corporal com clareamento de áreas escuras, deixando a pele mais uniforme, macia e iluminada.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20no%20Banho%20de%20Lua." target="_blank" rel="noopener">Agendar Banho de Lua <svg><use href="#arrow"/></svg></a></article>
+    </div>
+  </div>
+</section>
+
 <!-- ===== PROCESS ===== -->
 <section class="sec" id="processo">
   <div class="wrap">
@@ -612,24 +649,54 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   </div>
 </section>
 
-<!-- ===== SERVICES ===== -->
-<section class="sec bio" id="servicos" style="background:var(--white)">
+<!-- ===== QUIZ ===== -->
+<section class="sec" id="quiz-sec" style="background:var(--white)">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="eyebrow">Nossos serviços</span>
-      <h2>Tudo para valorizar o seu <span class="ac">rosto</span></h2>
-      <p>As técnicas e o desenho ideais são definidos no seu atendimento, sempre a partir do seu rosto e do seu gosto.</p>
+      <span class="eyebrow">Descubra</span>
+      <h2>Qual é o seu <span class="ac">olhar ideal</span>?</h2>
+      <p>Responda 3 perguntinhas rápidas e eu já te digo por onde começar — em menos de 30 segundos.</p>
     </div>
-    <div class="cardgrid">
-      <article class="card reveal"><span class="ic"><svg><use href="#eye"/></svg></span><h3>Extensão de cílios</h3><p>O realce que faz você acordar pronta todos os dias. Fio a fio, do efeito natural ao volume marcante, com mapeamento do olhar e manutenção impecável.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20extens%C3%A3o%20de%20c%C3%ADlios.%20Quero%20agendar." target="_blank" rel="noopener">Agendar cílios <svg><use href="#arrow"/></svg></a></article>
-      <article class="card reveal d1"><span class="ic"><svg><use href="#brow"/></svg></span><h3>Design de sobrancelhas</h3><p>O formato ideal com simetria e proporção, respeitando os traços únicos do seu rosto. Com acabamento em henna para um olhar mais harmônico.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20design%20de%20sobrancelhas.%20Quero%20agendar." target="_blank" rel="noopener">Agendar sobrancelhas <svg><use href="#arrow"/></svg></a></article>
-      <article class="card reveal d2"><span class="ic"><svg><use href="#drop"/></svg></span><h3>Tintura de fios brancos</h3><p>Coloração das sobrancelhas que cobre os fios brancos com aspecto natural, uniforme e duradouro.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20na%20tintura%20de%20sobrancelhas." target="_blank" rel="noopener">Agendar tintura <svg><use href="#arrow"/></svg></a></article>
-      <article class="card reveal"><span class="ic"><svg><use href="#spark"/></svg></span><h3>Micropigmentação</h3><p>Sobrancelhas e lábios com pigmento na medida certa: naturalidade que dura e praticidade no dia a dia.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20micropigmenta%C3%A7%C3%A3o.%20Quero%20agendar." target="_blank" rel="noopener">Agendar micropigmentação <svg><use href="#arrow"/></svg></a></article>
-      <article class="card reveal d1"><span class="ic"><svg><use href="#glow"/></svg></span><h3>Limpeza de pele</h3><p>Limpeza de pele facial e corporal para uma pele mais saudável, renovada e com brilho natural.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20limpeza%20de%20pele." target="_blank" rel="noopener">Agendar limpeza <svg><use href="#arrow"/></svg></a></article>
-      <article class="card reveal d2"><span class="ic"><svg><use href="#moon"/></svg></span><h3>Banho de Lua</h3><p>Tratamento corporal com clareamento de áreas escuras, deixando a pele mais uniforme, macia e iluminada.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20no%20Banho%20de%20Lua." target="_blank" rel="noopener">Agendar Banho de Lua <svg><use href="#arrow"/></svg></a></article>
+    <div class="quiz reveal" id="quiz">
+      <div class="q-dots"><i class="on"></i><i></i><i></i></div>
+      <div class="q-step active" data-step="0">
+        <h3>O que você mais quer realçar?</h3>
+        <div class="q-opts">
+          <button type="button" data-k="foco" data-v="cilios">Meus cílios</button>
+          <button type="button" data-k="foco" data-v="sobrancelhas">Minhas sobrancelhas</button>
+          <button type="button" data-k="foco" data-v="ambos">Os dois 💕</button>
+        </div>
+      </div>
+      <div class="q-step" data-step="1">
+        <h3>Que efeito combina com você?</h3>
+        <div class="q-opts">
+          <button type="button" data-k="efeito" data-v="natural">Natural e discreto</button>
+          <button type="button" data-k="efeito" data-v="marcante">Marcante e definido</button>
+          <button type="button" data-k="efeito" data-v="orientacao">Quero a sua orientação</button>
+        </div>
+        <span class="q-back">← voltar</span>
+      </div>
+      <div class="q-step" data-step="2">
+        <h3>Você prefere algo...</h3>
+        <div class="q-opts">
+          <button type="button" data-k="rotina" data-v="duradouro">Mais duradouro (menos manutenção)</button>
+          <button type="button" data-k="rotina" data-v="pratico">Prático pro dia a dia</button>
+          <button type="button" data-k="rotina" data-v="tanto">Tanto faz</button>
+        </div>
+        <span class="q-back">← voltar</span>
+      </div>
+      <div class="q-step q-result" data-step="3">
+        <div class="r-ic"><svg><use href="#eye"/></svg></div>
+        <div class="r-svc" id="qSvc">—</div>
+        <p id="qMsg">—</p>
+        <a class="btn btn-primary" id="qWa" href="https://wa.me/5561981907866" target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Falar com a Vanessa</a>
+        <div><span class="q-restart" id="qRestart">refazer o quiz</span></div>
+      </div>
     </div>
   </div>
 </section>
+
+
 
 <!-- ===== GALLERY ===== -->
 <section class="sec gallery" id="resultados">
@@ -753,30 +820,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   </div>
 </section>
 
-<!-- ===== FAQ ===== -->
-<section class="sec bio" id="duvidas" style="background:var(--pink-wash)">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <span class="eyebrow">Dúvidas</span>
-      <h2>Perguntas <span class="ac">frequentes</span></h2>
-      <p>As respostas para as dúvidas mais comuns. Ficou com outra pergunta? É só chamar no WhatsApp.</p>
-    </div>
-    <div class="faq reveal">
-      <details><summary>Quanto tempo duram os cílios? <span class="pl">+</span></summary><div class="a">A extensão acompanha o ciclo natural dos seus fios. Com os cuidados certos, o resultado se mantém bonito por semanas, e a manutenção repõe os fios que caem naturalmente.</div></details>
-      <details><summary>Preciso fazer manutenção? De quanto em quanto tempo? <span class="pl">+</span></summary><div class="a">Sim. A manutenção costuma ser feita a cada 2 ou 3 semanas, conforme o seu ciclo de cílios e a sua rotina. Combinamos o melhor intervalo no atendimento.</div></details>
-      <details><summary>A aplicação dói? <span class="pl">+</span></summary><div class="a">Não. A aplicação é indolor e confortável — muitas clientes até relaxam e dormem durante o procedimento. Tudo é feito com os olhos fechados e técnica segura.</div></details>
-      <details><summary>Posso molhar? Como cuidar no dia a dia? <span class="pl">+</span></summary><div class="a">Sim, com os cuidados corretos. Na aplicação você recebe todas as orientações: higienização dos fios, o que evitar e como prolongar o resultado.</div></details>
-      <details><summary>Qual é o protocolo de higiene? <span class="pl">+</span></summary><div class="a">A sua saúde vem em primeiro lugar: materiais de qualidade, descartáveis quando necessário e biossegurança rigorosa em todos os atendimentos.</div></details>
-      <details><summary>Quanto tempo leva o atendimento? <span class="pl">+</span></summary><div class="a">Depende do serviço escolhido. No agendamento eu informo a duração aproximada para você se organizar com tranquilidade.</div></details>
-      <details><summary>Como funciona o design com henna e a micropigmentação? <span class="pl">+</span></summary><div class="a">No design com henna, defino o formato ideal e aplico o pigmento para realçar e preencher as sobrancelhas. Já a micropigmentação é uma técnica de maior durabilidade, avaliada caso a caso no atendimento.</div></details>
-      <details><summary>Quanto custa? Como funciona o orçamento? <span class="pl">+</span></summary><div class="a">O valor depende do serviço escolhido e do que o seu olhar pede. Me chama no WhatsApp que passo o orçamento certinho, sem compromisso.</div></details>
-      <details><summary>Posso fazer grávida, lactante ou com pele sensível? <span class="pl">+</span></summary><div class="a">Alguns procedimentos pedem cuidados específicos nesses casos. Me conta um pouco sobre você antes de agendar que eu avalio, com segurança, o que é mais indicado para o seu momento.</div></details>
-      <details><summary>Você atende homens? <span class="pl">+</span></summary><div class="a">Sim! Cuidar do olhar e das sobrancelhas é para todo mundo. Atendo homens com o mesmo capricho — um design natural, que respeita os traços e valoriza a expressão.</div></details>
-      <details><summary>E se eu não gostar do resultado? <span class="pl">+</span></summary><div class="a">Antes de começar, a gente alinha juntas o formato e a intensidade, e eu só sigo com a sua aprovação. Meu compromisso é com um resultado que faça você se sentir bem.</div></details>
-      <details><summary>Onde fica o studio e quais os horários? <span class="pl">+</span></summary><div class="a">O studio fica no Sudoeste, em Brasília/DF, com atendimento por hora marcada. Para o endereço completo e os horários disponíveis, fale comigo no WhatsApp.</div></details>
-    </div>
-  </div>
-</section>
+
 
 <!-- ===== EXTRAS: CURSOS + BOUTIQUE ===== -->
 <section class="sec" id="estudio" style="background:var(--pink-wash)">
@@ -799,6 +843,31 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
     <h2>Vem realçar o seu olhar</h2>
     <p>Me chama no WhatsApp pra tirar dúvidas ou já marcar o seu horário. Te ajudo a escolher o que faz mais sentido pra você, com todo o cuidado — e sem compromisso.</p>
     <a class="btn btn-primary" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Agendar meu horário</a>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec bio" id="duvidas" style="background:var(--pink-wash)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas <span class="ac">frequentes</span></h2>
+      <p>As respostas para as dúvidas mais comuns. Ficou com outra pergunta? É só chamar no WhatsApp.</p>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Quanto tempo duram os cílios? <span class="pl">+</span></summary><div class="a">A extensão acompanha o ciclo natural dos seus fios. Com os cuidados certos, o resultado se mantém bonito por semanas, e a manutenção repõe os fios que caem naturalmente.</div></details>
+      <details><summary>Preciso fazer manutenção? De quanto em quanto tempo? <span class="pl">+</span></summary><div class="a">Sim. A manutenção costuma ser feita a cada 2 ou 3 semanas, conforme o seu ciclo de cílios e a sua rotina. Combinamos o melhor intervalo no atendimento.</div></details>
+      <details><summary>A aplicação dói? <span class="pl">+</span></summary><div class="a">Não. A aplicação é indolor e confortável — muitas clientes até relaxam e dormem durante o procedimento. Tudo é feito com os olhos fechados e técnica segura.</div></details>
+      <details><summary>Posso molhar? Como cuidar no dia a dia? <span class="pl">+</span></summary><div class="a">Sim, com os cuidados corretos. Na aplicação você recebe todas as orientações: higienização dos fios, o que evitar e como prolongar o resultado.</div></details>
+      <details><summary>Qual é o protocolo de higiene? <span class="pl">+</span></summary><div class="a">A sua saúde vem em primeiro lugar: materiais de qualidade, descartáveis quando necessário e biossegurança rigorosa em todos os atendimentos.</div></details>
+      <details><summary>Quanto tempo leva o atendimento? <span class="pl">+</span></summary><div class="a">Depende do serviço escolhido. No agendamento eu informo a duração aproximada para você se organizar com tranquilidade.</div></details>
+      <details><summary>Como funciona o design com henna e a micropigmentação? <span class="pl">+</span></summary><div class="a">No design com henna, defino o formato ideal e aplico o pigmento para realçar e preencher as sobrancelhas. Já a micropigmentação é uma técnica de maior durabilidade, avaliada caso a caso no atendimento.</div></details>
+      <details><summary>Quanto custa? Como funciona o orçamento? <span class="pl">+</span></summary><div class="a">O valor depende do serviço escolhido e do que o seu olhar pede. Me chama no WhatsApp que passo o orçamento certinho, sem compromisso.</div></details>
+      <details><summary>Posso fazer grávida, lactante ou com pele sensível? <span class="pl">+</span></summary><div class="a">Alguns procedimentos pedem cuidados específicos nesses casos. Me conta um pouco sobre você antes de agendar que eu avalio, com segurança, o que é mais indicado para o seu momento.</div></details>
+      <details><summary>Você atende homens? <span class="pl">+</span></summary><div class="a">Sim! Cuidar do olhar e das sobrancelhas é para todo mundo. Atendo homens com o mesmo capricho — um design natural, que respeita os traços e valoriza a expressão.</div></details>
+      <details><summary>E se eu não gostar do resultado? <span class="pl">+</span></summary><div class="a">Antes de começar, a gente alinha juntas o formato e a intensidade, e eu só sigo com a sua aprovação. Meu compromisso é com um resultado que faça você se sentir bem.</div></details>
+      <details><summary>Onde fica o studio e quais os horários? <span class="pl">+</span></summary><div class="a">O studio fica no Sudoeste, em Brasília/DF, com atendimento por hora marcada. Para o endereço completo e os horários disponíveis, fale comigo no WhatsApp.</div></details>
+    </div>
   </div>
 </section>
 
@@ -894,6 +963,26 @@ document.getElementById('bookForm').addEventListener('submit',function(ev){ev.pr
   var waUrl='https://wa.me/5561981907866?text='+encodeURIComponent(txt);
   var w=window.open(waUrl,'_blank','noopener');if(!w)window.location.href=waUrl;
 });
+
+// Quiz "olhar ideal"
+(function(){
+  var quiz=document.getElementById('quiz');if(!quiz)return;
+  var steps=quiz.querySelectorAll('.q-step'),dots=quiz.querySelectorAll('.q-dots i'),ans={},cur=0;
+  function show(i){cur=i;steps.forEach(function(s,n){s.classList.toggle('active',n===i);});dots.forEach(function(d,n){d.classList.toggle('on',n<=Math.min(i,2));});if(i===3)result();}
+  function result(){
+    var foco=ans.foco,efeito=ans.efeito,rotina=ans.rotina,svc,msg;
+    if(foco==='cilios'){svc='Extensão de cílios';msg=(efeito==='marcante')?'Um volume que marca o olhar, do seu jeito.':'Cílios fio a fio, com efeito natural e leve.';}
+    else if(foco==='sobrancelhas'){if(rotina==='duradouro'){svc='Micropigmentação de sobrancelha';msg='Praticidade que dura, com naturalidade.';}else{svc='Design de sobrancelha + henna';msg='O formato ideal pro seu rosto, realçado com henna.';}}
+    else{svc='Cílios + design de sobrancelha';msg='O combo que transforma o olhar por completo.';}
+    document.getElementById('qSvc').textContent=svc;
+    document.getElementById('qMsg').textContent=msg;
+    var txt='Olá Vanessa! Fiz o quiz no site e meu resultado foi: '+svc+'. Gostaria de saber mais e agendar.';
+    document.getElementById('qWa').href='https://wa.me/5561981907866?text='+encodeURIComponent(txt);
+  }
+  quiz.querySelectorAll('.q-opts button').forEach(function(b){b.addEventListener('click',function(){ans[b.getAttribute('data-k')]=b.getAttribute('data-v');show(cur+1);});});
+  quiz.querySelectorAll('.q-back').forEach(function(b){b.addEventListener('click',function(){show(Math.max(0,cur-1));});});
+  document.getElementById('qRestart').addEventListener('click',function(){ans={};show(0);});
+})();
 </script>
 </body>
 </html>
