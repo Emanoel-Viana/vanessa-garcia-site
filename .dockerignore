@@ -1,0 +1,12 @@
+# Não enviar para a imagem Docker (só o site de produção vai)
+fotos/trabalhos
+fotos/trabalhos 2
+fotos/trabalhos*/
+concepts/
+*.md
+*.pdf
+*.zip
+.git
+.gitignore
+Dockerfile
+.dockerignore

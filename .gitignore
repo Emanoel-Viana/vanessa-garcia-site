@@ -1,0 +1,19 @@
+# Fontes pesadas / de origem (ficam só no disco, não no repo)
+fotos/trabalhos/
+fotos/trabalhos 2/
+concepts/
+*.pdf
+*.zip
+
+# Docs internas do projeto (não versionar no repo do site)
+HISTORICO_PROJETO.md
+PENDENCIAS.md
+DESIGN.md
+PRODUCT.md
+
+# Sistema
+Thumbs.db
+.DS_Store
+
+# Skill interna
+.impeccable/

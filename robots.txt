@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ao publicar no domínio final, confirme a URL do sitemap abaixo:
+Sitemap: https://SEU-DOMINIO/sitemap.xml

@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Studio Vanessa Garcia | Extensão de Cílios e Sobrancelhas — Sudoeste, Brasília</title>
+<meta name="description" content="Studio Vanessa Garcia — extensão de cílios, design de sobrancelhas, micropigmentação, limpeza de pele, Banho de Lua, cursos e boutique no Sudoeste, Brasília/DF. Técnica segura, higiene rigorosa e atendimento individualizado. Agende pelo WhatsApp." />
+<meta name="author" content="Studio Vanessa Garcia" />
+<meta name="robots" content="index, follow" />
+<meta name="geo.region" content="BR-DF" />
+<meta name="geo.placename" content="Brasília" />
+<meta property="og:title" content="Studio Vanessa Garcia — Realce o seu olhar e a sua confiança" />
+<meta property="og:description" content="Extensão de cílios, sobrancelhas, micropigmentação, limpeza de pele e Banho de Lua com a Vanessa Garcia. Sudoeste, Brasília/DF." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Studio Vanessa Garcia" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:image" content="og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Studio Vanessa Garcia — Realce o seu olhar e a sua confiança" />
+<meta name="twitter:description" content="Extensão de cílios, sobrancelhas e micropigmentação no Sudoeste, Brasília/DF." />
+<meta name="twitter:image" content="og-image.jpg" />
+<!-- Ao publicar no domínio final, trocar og:image/twitter:image por URL absoluta e adicionar <link rel="canonical"> + og:url -->
+<meta name="theme-color" content="#ffffff" />
+<link rel="icon" type="image/png" href="fotos/face-bronze.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js');</script>
+<style>
+/* ===== TOKENS ===== */
+:root{
+  --ink:#2d2d2d;
+  --ink-soft:#5f5f5f;
+  --pink:#a62e52;          /* text / buttons (AA on white & pink tints) */
+  --pink-bright:#d4567e;   /* icons / accents on light */
+  --pink-soft:#fbe9f0;     /* icon circle / chips */
+  --pink-wash:#fdf2f6;     /* soft section tint */
+  --pink-wash-2:#fce8f0;
+  --gold:#c2a24e;          /* fio dourado — assinatura premium */
+  --gold-soft:rgba(194,162,78,.3);
+  --line:#ececec;
+  --white:#fff;
+  --shadow:0 22px 50px -26px rgba(45,45,45,.22);
+  --shadow-sm:0 12px 30px -18px rgba(45,45,45,.22);
+  --maxw:1200px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+@media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+section[id],#top{scroll-margin-top:96px}
+.skip{position:absolute;left:-9999px;top:0;z-index:100;background:var(--pink);color:#fff;padding:12px 18px;border-radius:0 0 10px 0;font-weight:700}
+.skip:focus{left:0}
+body{background:var(--white);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;line-height:1.65;font-size:16.5px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--pink);color:#fff}
+:focus-visible{outline:2px solid var(--pink);outline-offset:3px;border-radius:5px}
+::-webkit-scrollbar{width:11px}::-webkit-scrollbar-track{background:var(--pink-wash)}
+::-webkit-scrollbar-thumb{background:var(--pink-bright);border-radius:20px;border:3px solid var(--pink-wash)}
+
+h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif;color:var(--ink);line-height:1.12;font-weight:700;letter-spacing:-.01em}
+h1 .ac,h2 .ac,h3 .ac{color:var(--pink)}
+.eyebrow{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--pink);margin-bottom:16px}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.sec{padding:clamp(42px,6vh,72px) 0}
+.sec-head{text-align:center;max-width:720px;margin:0 auto}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px)}
+.sec-head p{margin-top:14px;color:var(--ink-soft);font-size:clamp(15.5px,1.1vw,17.5px)}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.08s}.reveal.d2{transition-delay:.16s}.reveal.d3{transition-delay:.24s}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:"DM Sans",sans-serif;
+  font-weight:700;font-size:15.5px;padding:15px 28px;border-radius:9px;cursor:pointer;border:1.5px solid transparent;transition:.3s var(--ease)}
+.btn svg{width:19px;height:19px;flex:0 0 auto}
+.btn-primary{background:var(--pink);color:#fff;box-shadow:0 16px 30px -14px rgba(166,46,82,.55)}
+.btn-primary:hover{background:#8a2544;transform:translateY(-2px)}
+.btn-outline{background:#fff;color:var(--pink);border-color:#eccdd8}
+.btn-outline:hover{border-color:var(--pink);background:var(--pink-wash)}
+.btn-ghost-link{color:var(--pink);font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px}
+.btn-ghost-link svg{width:17px;height:17px;transition:.3s}
+.btn-ghost-link:hover svg{transform:translateX(4px)}
+
+/* ===== PREMIUM · quiet luxury (fio dourado + motion refinado) ===== */
+/* assinatura: sublinhado dourado que desenha sob a palavra-acento */
+.ac{position:relative;white-space:nowrap}
+.ac::after{content:"";position:absolute;left:3%;right:3%;bottom:-.06em;height:2px;border-radius:3px;
+  background:linear-gradient(90deg,var(--gold),var(--gold-soft));transform-origin:left}
+.js .reveal .ac::after{transform:scaleX(0);transition:transform 1.05s var(--ease) .4s}
+.js .reveal.in .ac::after{transform:scaleX(1)}
+@media(prefers-reduced-motion:reduce){.ac::after{transform:none}}
+/* molduras de foto com fio dourado interno */
+.hero-photo .badge{z-index:5}
+.hero-photo::after,.bio-photo::after{content:"";position:absolute;inset:11px;border:1px solid var(--gold-soft);
+  border-radius:14px;pointer-events:none;z-index:3}
+/* faixa de credibilidade: tiques dourados + fio sob o nome */
+.cred .row svg{color:var(--pink)}
+.cred .who{position:relative;padding-bottom:16px}
+.cred .who::after{content:"";position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:48px;height:2px;
+  border-radius:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+/* cards: fio dourado no topo ao passar o mouse + ícone refinado */
+.card{position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:2px;transform:scaleX(0);transform-origin:left;
+  background:linear-gradient(90deg,var(--gold),var(--pink));transition:transform .45s var(--ease)}
+.card:hover::before{transform:scaleX(1)}
+.card:hover .ic{box-shadow:0 0 0 1px var(--gold-soft)}
+.card .ic{transition:box-shadow .35s var(--ease),transform .35s var(--ease)}
+.card:hover .ic{transform:scale(1.05)}
+/* passos do processo: acento dourado */
+.step .n{box-shadow:0 8px 20px -10px rgba(166,46,82,.5)}
+.step:hover{border-color:var(--gold-soft)}
+/* números tabulares em dados/UI */
+.cred,.ways,footer,.hero .loc{font-variant-numeric:tabular-nums}
+/* botões: profundidade premium no hover */
+.btn-primary:hover{box-shadow:0 22px 44px -16px rgba(166,46,82,.6)}
+
+/* ===== HEADER ===== */
+header{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;transition:.3s var(--ease)}
+header.scrolled{border-bottom-color:var(--line);box-shadow:0 2px 20px -14px rgba(45,45,45,.3)}
+header .bar{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:14px clamp(20px,5vw,56px)}
+.brand{display:flex;align-items:center;gap:11px;flex:0 0 auto}
+.brand .logo-mk{height:54px;width:auto;display:block;flex:0 0 auto}
+header.scrolled .brand .logo-mk{height:48px;transition:height .3s var(--ease)}
+.brand .logo-mk{transition:height .3s var(--ease)}
+.brand b{font-family:"Playfair Display",serif;font-size:19px;font-weight:700;letter-spacing:.01em;display:block;line-height:1}
+.brand small{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-top:3px;font-weight:600}
+nav.main{display:flex;gap:clamp(16px,2vw,30px);font-size:15px;font-weight:500;color:var(--ink)}
+nav.main a{position:relative;padding:4px 0;color:#444}
+nav.main a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;background:var(--pink);transition:width .3s var(--ease);border-radius:2px}
+nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
+.menu-btn{display:none;background:none;border:none;color:var(--ink);cursor:pointer;padding:6px}
+.menu-btn svg{width:26px;height:26px}
+.mobile-nav{display:none}
+
+/* ===== HERO ===== */
+.hero{position:relative;padding:clamp(96px,11vh,122px) 0 clamp(36px,5vh,56px);
+  background:linear-gradient(180deg,#fff 0%,var(--pink-wash) 46%,var(--pink-wash-2) 100%)}
+.hero .grid{display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(30px,5vw,68px);align-items:center}
+.hero h1{font-size:clamp(38px,5.4vw,64px);font-weight:800}
+.hero .sub{margin-top:22px;max-width:48ch;color:var(--ink-soft);font-size:clamp(16px,1.2vw,18.5px)}
+.hero .cta{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.hero .loc{margin-top:22px;font-size:14px;color:var(--ink-soft);display:flex;align-items:center;gap:9px}
+.hero .loc svg{width:17px;height:17px;color:var(--pink)}
+.hero-photo{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:4/4.3;box-shadow:var(--shadow);background:var(--pink-soft)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 20%}
+.hero-photo .badge{position:absolute;left:18px;bottom:18px;background:rgba(255,255,255,.94);backdrop-filter:blur(6px);
+  border-radius:12px;padding:12px 16px;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:11px}
+.hero-photo .badge .ic{width:34px;height:34px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;flex:0 0 auto}
+.hero-photo .badge .ic svg{width:20px;height:20px;color:var(--pink)}
+.hero-photo .badge b{font-family:"Playfair Display",serif;font-size:15px;display:block;line-height:1.1}
+.hero-photo .badge small{font-size:11.5px;color:var(--ink-soft)}
+
+/* ===== CREDIBILITY BAR ===== */
+.cred{background:var(--white);border-bottom:1px solid var(--line)}
+.cred .inner{padding:22px 0}
+.cred .who{text-align:center;font-family:"Playfair Display",serif;font-size:17px;color:var(--ink);margin-bottom:14px}
+.cred .who b{color:var(--pink)}
+.cred .row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 28px}
+.cred .row span{display:inline-flex;align-items:center;gap:9px;font-size:14.5px;color:#444;font-weight:500}
+.cred .row svg{width:18px;height:18px;color:var(--pink);flex:0 0 auto}
+
+/* ===== CARDS GRID (benefits / services) ===== */
+.cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:34px 30px;box-shadow:var(--shadow-sm);
+  transition:.35s var(--ease)}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#f0d7e0}
+.card .ic{width:58px;height:58px;border-radius:50%;background:var(--pink-soft);display:grid;place-items:center;margin-bottom:22px}
+.card .ic svg{width:28px;height:28px;color:var(--pink)}
+.card h3{font-size:22px;margin-bottom:10px}
+.card p{color:var(--ink-soft);font-size:15.5px}
+.card .more{margin-top:18px;display:inline-flex}
+.center-cta{text-align:center;margin-top:30px}
+
+/* ===== BIO ===== */
+.bio{background:var(--pink-wash)}
+.bio .grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:clamp(30px,5vw,64px);align-items:center}
+.bio-photo{border-radius:20px;overflow:hidden;aspect-ratio:4/4.6;box-shadow:var(--shadow);background:var(--pink-soft)}
+.bio-photo img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.bio h2{font-size:clamp(28px,3.6vw,46px)}
+.bio .role{color:var(--pink);font-weight:600;margin-top:8px;font-size:16px}
+.bio .intro{color:var(--ink-soft);margin:18px 0 6px;max-width:52ch}
+.bio .block{margin-top:22px}
+.bio .block .h{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--pink);margin-bottom:12px}
+.bio .block ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.bio .block li{display:flex;align-items:flex-start;gap:11px}
+.bio .block li svg{width:19px;height:19px;color:var(--pink);flex:0 0 auto;margin-top:3px}
+.bio .block li b{font-weight:700;color:var(--ink)}
+.bio .block li span{display:block;color:var(--ink-soft);font-size:14.5px}
+.bio .block li .todo{color:var(--pink);font-style:italic}
+.bio blockquote{margin:26px 0 0;padding-left:20px;border-left:3px solid var(--pink-bright);
+  font-family:"Playfair Display",serif;font-style:italic;font-size:19px;color:var(--ink);line-height:1.45}
+.bio .btn{margin-top:28px}
+
+/* ===== PROCESS (steps) ===== */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:38px;counter-reset:step}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 24px;box-shadow:var(--shadow-sm)}
+.step .n{counter-increment:step;width:42px;height:42px;border-radius:12px;background:var(--pink);color:#fff;
+  font-family:"Playfair Display",serif;font-size:19px;font-weight:700;display:grid;place-items:center;margin-bottom:18px}
+.step .n::before{content:counter(step)}
+.step h3{font-size:18.5px;margin-bottom:9px}
+.step p{color:var(--ink-soft);font-size:14.5px}
+
+/* ===== GALLERY ===== */
+.gallery{background:var(--pink-wash)}
+.g-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.g-tile{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:3/3.4;
+  background:linear-gradient(160deg,#fff,var(--pink-soft));border:1px solid var(--line);display:grid;place-items:center;box-shadow:var(--shadow-sm)}
+.g-tile svg.motif{width:46%;color:var(--pink);opacity:.85}
+.g-tile .lbl{position:absolute;left:0;right:0;bottom:0;padding:14px;background:linear-gradient(to top,rgba(45,45,45,.04),transparent);
+  text-align:center;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:15px}
+.g-tile.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* antes & depois (fotos reais) */
+.ba-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin-top:36px}
+.ba-card{flex:1 1 calc(50% - 11px);max-width:calc(50% - 11px);background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:var(--shadow-sm);margin:0;transition:transform .5s,box-shadow .5s}
+.ba-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.ba-pair{display:grid;grid-template-columns:1fr 1fr;gap:3px}
+.ba-img{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--pink-soft)}
+.ba-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
+.ba-card:hover .ba-img img{transform:scale(1.045)}
+.ba-tag{position:absolute;top:10px;left:10px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  background:rgba(255,255,255,.9);color:var(--ink-soft);padding:4px 11px;border-radius:999px}
+.ba-tag.is-after{background:var(--pink);color:#fff}
+.ba-cap{padding:14px 18px;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:15px;text-align:center}
+.ba-sub{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,25px);color:var(--ink);margin:54px 0 0}
+.g-tile.photo{aspect-ratio:1/1;background:var(--pink-soft)}
+.g-tile.photo img{transition:transform .6s}
+.g-tile.photo:hover img{transform:scale(1.05)}
+.g-tile.photo .lbl{background:linear-gradient(to top,rgba(20,10,12,.62),rgba(20,10,12,0));color:#fff;font-style:italic;padding:22px 14px 14px}
+/* vídeos (em movimento) */
+.vid-sub{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,25px);color:var(--ink);margin:54px 0 6px}
+.vid-note{text-align:center;color:var(--ink-soft);font-size:14.5px;margin:0 auto;max-width:48ch}
+.vid-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:28px auto 0;max-width:600px}
+.vid{margin:0;background:#140a0c;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.vid video{display:block;width:100%;aspect-ratio:478/850;object-fit:cover;background:#140a0c}
+.vid figcaption{padding:12px 14px;text-align:center;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:14px;background:#fff}
+
+/* ===== TESTIMONIALS ===== */
+.q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px}
+.q-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:var(--shadow-sm)}
+.stars{display:flex;gap:3px;margin-bottom:16px}
+.stars svg{width:18px;height:18px;color:var(--gold)}
+.q-card p{font-size:16.5px;color:#3a3a3a;line-height:1.6}
+.q-card .who{display:flex;align-items:center;gap:13px;margin-top:22px}
+.q-card .who .av{width:46px;height:46px;border-radius:50%;background:var(--pink);color:#fff;display:grid;place-items:center;
+  font-weight:700;font-size:15px;flex:0 0 auto}
+.q-card .who b{display:block;font-size:15px}
+.q-card .who small{color:var(--ink-soft);font-size:13px}
+.q-note{text-align:center;margin-top:28px;font-size:13.5px;color:var(--ink-soft)}
+
+/* ===== FAQ ===== */
+.faq{max-width:820px;margin:34px auto 0}
+.faq details{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:#fff;overflow:hidden;transition:.3s}
+.faq details[open]{border-color:#f0d0dc;box-shadow:var(--shadow-sm)}
+.faq summary{list-style:none;cursor:pointer;padding:19px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  font-weight:600;font-size:16.5px;color:var(--ink)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .pl{width:26px;height:26px;border-radius:50%;background:var(--pink-soft);color:var(--pink);flex:0 0 auto;
+  display:grid;place-items:center;transition:.3s var(--ease);font-size:18px;line-height:1}
+.faq details[open] summary .pl{transform:rotate(45deg);background:var(--pink);color:#fff}
+.faq .a{padding:0 22px 20px;color:var(--ink-soft);font-size:15.5px;line-height:1.65}
+
+/* ===== FINAL CTA ===== */
+.final{background:linear-gradient(135deg,#781f3a,#a62e52);color:#fff;text-align:center}
+.final h2{color:#fff;font-size:clamp(30px,4.2vw,50px)}
+.final p{color:rgba(255,255,255,.9);max-width:52ch;margin:18px auto 30px}
+.final .btn-primary{background:#fff;color:var(--pink);box-shadow:0 16px 40px -14px rgba(0,0,0,.4)}
+.final .btn-primary:hover{background:#fff5f8;transform:translateY(-2px)}
+
+/* ===== CONTACT ===== */
+.contact .grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,60px);align-items:start}
+.ways{display:flex;flex-direction:column;gap:4px;margin-top:28px}
+.ways a{display:flex;align-items:center;gap:15px;padding:16px 0;border-bottom:1px solid var(--line);transition:.3s}
+.ways a:hover{padding-left:8px}
+.ways .ic{width:46px;height:46px;border-radius:12px;background:var(--pink-soft);display:grid;place-items:center;flex:0 0 auto;transition:.3s}
+.ways a:hover .ic{background:var(--pink);color:#fff}
+.ways .ic svg{width:21px;height:21px;color:var(--pink)}
+.ways a:hover .ic svg{color:#fff}
+.ways b{display:block;font-size:16.5px}.ways small{color:var(--ink-soft);font-size:14px}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:clamp(24px,3vw,38px);box-shadow:var(--shadow)}
+.form-card h3{font-size:24px;margin-bottom:5px}.form-card .fsub{color:var(--ink-soft);font-size:14.5px;margin-bottom:22px}
+.field{margin-bottom:16px}
+.field label{display:block;font-size:13px;font-weight:600;color:var(--ink);margin-bottom:7px}
+.field input,.field select,.field textarea{width:100%;border:1.5px solid var(--line);border-radius:10px;padding:13px 15px;
+  font-family:inherit;font-size:15.5px;color:var(--ink);background:#fff;transition:.25s}
+.field textarea{resize:vertical;min-height:92px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--pink);box-shadow:0 0 0 3px rgba(166,46,82,.14)}
+.field .err{color:var(--pink);font-size:12.5px;margin-top:6px;display:none}
+.field.invalid input{border-color:var(--pink)}.field.invalid .err{display:block}
+.field ::placeholder{color:#767676}
+.form-card .btn{width:100%;margin-top:6px}
+.form-card .fine{margin-top:12px;font-size:12.5px;color:var(--ink-soft);text-align:center}
+
+/* ===== FOOTER ===== */
+footer{background:#241016;color:#f3dfe6;padding:clamp(52px,7vh,80px) 0 26px}
+footer .grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.12)}
+footer .brand b{color:#fff}footer .brand small{color:var(--pink-bright)}
+footer .ft-about{margin-top:18px;color:rgba(243,223,230,.82);max-width:36ch;font-size:14.5px}
+footer .social{display:flex;gap:11px;margin-top:18px}
+footer .social a{width:42px;height:42px;border:1px solid rgba(255,255,255,.2);border-radius:11px;display:grid;place-items:center;transition:.3s}
+footer .social a:hover{background:var(--pink);border-color:var(--pink)}
+footer .social svg{width:19px;height:19px}
+footer h4{font-family:"DM Sans",sans-serif;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--pink-bright);margin-bottom:16px;font-weight:700}
+footer ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+footer ul a{color:rgba(243,223,230,.82);font-size:14.5px}footer ul a:hover{color:#fff}
+footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:rgba(243,223,230,.66)}
+
+/* ===== FLOAT WA ===== */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:70;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;
+  display:grid;place-items:center;box-shadow:0 14px 34px -8px rgba(37,211,102,.7);transition:.35s var(--ease);transform:translateY(90px)}
+.wa-float.show{transform:none}.wa-float:hover{transform:scale(1.07)}.wa-float svg{width:30px;height:30px}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:940px){
+  .cardgrid,.steps{grid-template-columns:1fr 1fr}
+  .g-grid{grid-template-columns:1fr 1fr}
+  footer .grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:820px){
+  nav.main,header .bar>.btn{display:none}
+  .menu-btn{display:block}
+  .hero .grid,.bio .grid,.contact .grid{grid-template-columns:1fr}
+  .hero-photo{order:-1;max-width:420px;margin:0 auto;aspect-ratio:16/11}
+  .bio-photo{max-width:440px;margin:0 auto}
+  .ba-card{flex-basis:100%;max-width:100%}
+  .q-grid{grid-template-columns:1fr}
+  .mobile-nav.open{display:flex;flex-direction:column;padding:6px clamp(20px,5vw,56px) 22px;background:#fff;border-top:1px solid var(--line)}
+  .mobile-nav.open a{padding:13px 0;border-bottom:1px solid var(--line);font-weight:500;color:#444}
+  .mobile-nav.open a.cta{color:var(--pink);font-weight:700}
+}
+@media(max-width:560px){
+  .cardgrid,.steps,.g-grid,footer .grid{grid-template-columns:1fr}
+  .vid-grid{grid-template-columns:1fr;max-width:340px}
+  .hero .cta .btn{width:100%}
+}
+/* ===== IMPRESSÃO / PDF ===== */
+@media print{
+  @page{margin:12mm}
+  html,body{background:#fff}
+  .reveal{opacity:1!important;transform:none!important}
+  .ac::after{transform:scaleX(1)!important}
+  header{position:static!important;box-shadow:none;border-bottom:1px solid var(--line);background:#fff!important}
+  .menu-btn,.mobile-nav,.wa-float{display:none!important}
+  .hero{padding:10px 0 20px}
+  .final{background:#fff!important;color:var(--ink)!important}
+  .final h2,.final p{color:var(--ink)!important}
+  .final .btn-primary{background:var(--pink)!important;color:#fff!important;box-shadow:none}
+  footer{background:#fff!important;color:var(--ink)!important;border-top:2px solid var(--pink)}
+  footer .ft-about,footer ul a,footer .copy{color:#444!important}
+  footer .brand b{color:var(--ink)!important}
+  .card,.step,.q-card,.svc-card,details,.hero-photo,.bio-photo,.form-card,.g-tile{break-inside:avoid}
+  section{break-inside:auto}
+  .sec{padding:22px 0}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact;box-shadow:none!important}
+  .card,.step,.q-card,.form-card,.faq details{border:1px solid var(--line)!important}
+}
+</style>
+<meta name="format-detection" content="telephone=no" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Studio Vanessa Garcia",
+  "description": "Extensão de cílios, design de sobrancelhas, micropigmentação, tintura de fios brancos, limpeza de pele facial e corporal, Banho de Lua, cursos e boutique no Sudoeste, Brasília/DF.",
+  "image": "og-image.jpg",
+  "telephone": "+5561981907866",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Sudoeste",
+    "addressLocality": "Brasília",
+    "addressRegion": "DF",
+    "addressCountry": "BR"
+  },
+  "areaServed": { "@type": "City", "name": "Brasília" },
+  "sameAs": ["https://instagram.com/ciliosvanessa_garcia"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+  }],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Extensão de cílios" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Design de sobrancelhas" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Tintura de fios brancos" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Micropigmentação" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpeza de pele facial e corporal" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Banho de Lua" } }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===== ICONS ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vgeye" viewBox="0 0 170 120">
+    <path d="M14 40 C46 24 82 20 104 21 C124 22 142 27 156 33 C144 35 124 32 104 31 C80 30 46 34 14 42 Z" fill="#a62e52"/>
+    <path d="M22 74 C54 58 96 59 126 76" fill="none" stroke="#a62e52" stroke-width="2.8" stroke-linecap="round"/>
+    <path d="M22 74 C54 90 96 88 126 76" fill="none" stroke="#a62e52" stroke-width="2.6" stroke-linecap="round"/>
+    <circle cx="72" cy="74" r="9.4" fill="none" stroke="#c2a24e" stroke-width="2.8"/><circle cx="72" cy="74" r="3.8" fill="#a62e52"/>
+    <g fill="none" stroke="#a62e52" stroke-width="2.2" stroke-linecap="round"><path d="M36 64 C31 52 29 46 22 38"/><path d="M48 60 C44 48 43 42 38 33"/><path d="M96 60 C100 48 102 42 108 33"/><path d="M108 64 C114 52 117 46 124 38"/></g>
+    <g fill="none" stroke="#c2a24e" stroke-width="2.3" stroke-linecap="round"><path d="M60 58 C58 46 58 40 56 30"/><path d="M72 57 C72 45 72 39 72 29"/><path d="M84 58 C86 46 87 40 89 30"/></g>
+  </symbol>
+  <symbol id="drop" viewBox="0 0 48 48"><path d="M24 6c0 0 14 16 14 25a14 14 0 0 1-28 0c0-9 14-25 14-25z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/></symbol>
+  <symbol id="glow" viewBox="0 0 48 48"><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="2.3"/><g stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M24 6v5M24 37v5M6 24h5M37 24h5M11 11l3.5 3.5M33.5 33.5L37 37M37 11l-3.5 3.5M14.5 33.5L11 37"/></g></symbol>
+  <symbol id="moon" viewBox="0 0 48 48"><path d="M28 7A17 17 0 1 0 41 35 13 13 0 0 1 28 7z" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linejoin="round"/></symbol>
+  <symbol id="cap" viewBox="0 0 48 48"><path d="M4 18L24 9l20 9-20 9z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M13 22v9c0 3 5 6 11 6s11-3 11-6v-9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M44 18v10" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="bag" viewBox="0 0 48 48"><path d="M12 16h24l-2 23a2 2 0 0 1-2 2H16a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M18 16v-2a6 6 0 0 1 12 0v2" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+  <symbol id="eye" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M6 26 C16 16 32 16 42 26"/><path d="M6 26 C16 34 32 34 42 26"/><circle cx="24" cy="26" r="5.2"/><path d="M11 20l-2-4M18 17l-1-4M24 16v-4M30 17l1-4M37 20l2-4"/></g></symbol>
+  <symbol id="brow" viewBox="0 0 48 32"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M6 22 C18 10 34 9 42 17"/><path d="M9 24 C19 18 31 17 39 21"/><path d="M12 22l-2-5M19 18l-1-5M27 17l1-5M34 19l2-4"/></g></symbol>
+  <symbol id="spark" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M24 7v9M24 32v9M7 24h9M32 24h9M13 13l6 6M29 29l6 6M35 13l-6 6M19 29l-6 6"/></g></symbol>
+  <symbol id="clock" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2.3"/><path d="M24 14v10l7 5" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/></symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.9 21l1.2-6.8-5-4.9 6.9-1z" fill="currentColor"/></symbol>
+  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
+  <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M.06 24l1.69-6.16a11.86 11.86 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.42 3.49 11.8 11.8 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24zM6.6 20.2l.36.22a9.86 9.86 0 005.03 1.38 9.9 9.9 0 009.89-9.9 9.82 9.82 0 00-2.9-7A9.82 9.82 0 0012.06 2a9.9 9.9 0 00-9.9 9.89c0 1.9.55 3.75 1.59 5.35l.24.38-1 3.65 3.6-.95zM17.5 14.3c-.08-.14-.3-.22-.63-.39-.33-.16-1.96-.97-2.26-1.08-.3-.11-.52-.16-.74.17-.22.33-.85 1.07-1.04 1.29-.19.22-.38.25-.71.08-.33-.16-1.4-.51-2.66-1.64-.98-.88-1.65-1.96-1.84-2.29-.19-.33-.02-.5.15-.67.15-.15.33-.38.49-.58.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.16-.74-1.79-1.02-2.45-.27-.64-.54-.55-.74-.56l-.63-.01c-.22 0-.58.08-.88.41-.3.33-1.15 1.13-1.15 2.76 0 1.63 1.19 3.21 1.35 3.43.16.22 2.33 3.56 5.65 4.99.79.34 1.4.54 1.88.69.79.25 1.51.21 2.08.13.63-.09 1.96-.8 2.24-1.58.27-.77.27-1.43.19-1.57z"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+</svg>
+
+<!-- ===== HEADER ===== -->
+<header id="hdr">
+  <div class="bar">
+    <a class="brand" href="#top" aria-label="Studio Vanessa Garcia — início">
+      <img class="logo-mk" src="fotos/face-bronze.png" width="44" height="54" alt="" aria-hidden="true" decoding="async">
+      <span><b>Vanessa Garcia</b><small>Lash Designer</small></span>
+    </a>
+    <nav class="main">
+      <a href="#sobre">A Vanessa</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-primary" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><svg><use href="#menu"/></svg></button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="#sobre">A Vanessa</a><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a>
+    <a href="#resultados">Resultados</a><a href="#estudio">Cursos</a><a href="#duvidas">Dúvidas</a><a href="#contato">Contato</a>
+    <a class="cta" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener">Agendar no WhatsApp →</a>
+  </nav>
+</header>
+<span id="top"></span>
+
+<!-- ===== HERO ===== -->
+<main id="conteudo" tabindex="-1">
+<section class="hero">
+  <div class="wrap">
+    <div class="grid">
+      <div class="copy reveal">
+        <h1>Realce o seu <span class="ac">Olhar</span><br>e a sua <span class="ac">Confiança</span></h1>
+        <p class="sub"><b>Acorde pronta todos os dias.</b> Cílios, sobrancelhas e micropigmentação com técnica segura, muita higiene e um olhar feito só para você — com a Vanessa Garcia, no Sudoeste, em Brasília.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Agendar meu horário</a>
+          <a class="btn btn-outline" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20algumas%20d%C3%BAvidas." target="_blank" rel="noopener">Tirar dúvidas no WhatsApp</a>
+        </div>
+        <p class="loc"><svg><use href="#pin"/></svg> Sudoeste · Brasília/DF · atendimento com hora marcada</p>
+      </div>
+      <div class="hero-photo reveal d1">
+        <img src="fotos/vanessa.jpg" width="644" height="644" fetchpriority="high" decoding="async" alt="Vanessa Garcia, especialista em extensão de cílios e sobrancelhas, no seu estúdio no Sudoeste, Brasília">
+        <div class="badge"><span class="ic"><svg><use href="#eye"/></svg></span><span><b>Vanessa Garcia</b><small>Lash Designer · Sudoeste</small></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CREDIBILITY ===== -->
+<div class="cred">
+  <div class="wrap"><div class="inner">
+    <p class="who"><b>Vanessa Garcia</b> · Lash Designer &amp; Designer de Sobrancelhas</p>
+    <div class="row">
+      <span><svg><use href="#check"/></svg> Especialista em extensão de cílios</span>
+      <span><svg><use href="#check"/></svg> Biossegurança e higiene rigorosa</span>
+      <span><svg><use href="#check"/></svg> Atendimento individualizado</span>
+      <span><svg><use href="#check"/></svg> Studio no Sudoeste, Brasília</span>
+    </div>
+  </div></div>
+</div>
+
+<!-- ===== BENEFITS ===== -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">O que o nosso trabalho transforma</span>
+      <h2>Beleza que começa no <span class="ac">olhar</span></h2>
+      <p>Um olhar bem cuidado muda a forma como você se vê e se sente. É isso que entrego em cada atendimento, sempre a partir do seu rosto e do seu gosto.</p>
+    </div>
+    <div class="cardgrid">
+      <article class="card reveal"><span class="ic"><svg><use href="#eye"/></svg></span><h3>Um olhar que marca</h3><p>Cílios que abrem e destacam o seu olhar, do efeito mais natural ao mais volumoso — do jeitinho que você gosta.</p></article>
+      <article class="card reveal d1"><span class="ic"><svg><use href="#brow"/></svg></span><h3>Rosto em harmonia</h3><p>Sobrancelhas no formato e na simetria certos para equilibrar e valorizar os seus traços.</p></article>
+      <article class="card reveal d2"><span class="ic"><svg><use href="#clock"/></svg></span><h3>Mais tempo pra você</h3><p>Acorde pronta: menos tempo na frente do espelho e muito mais autoestima na sua rotina.</p></article>
+    </div>
+    <div class="center-cta reveal"><a class="btn btn-primary" href="#servicos">Quero conhecer os serviços</a></div>
+  </div>
+</section>
+
+<!-- ===== BIO / A VANESSA ===== -->
+<section class="sec bio" id="sobre">
+  <div class="wrap">
+    <div class="grid">
+      <div class="bio-photo reveal">
+        <img src="fotos/vanessa.jpg" width="644" height="644" loading="lazy" decoding="async" alt="Vanessa Garcia no seu estúdio de estética no Sudoeste, Brasília">
+      </div>
+      <div class="reveal d1">
+        <span class="eyebrow">Conheça a especialista</span>
+        <h2>Vanessa Garcia</h2>
+        <p class="role">Especialista em realce do olhar e design de sobrancelhas</p>
+        <p class="intro">Atendo no meu studio no Sudoeste, em Brasília, realçando o olhar com técnica segura e um desenho pensado para cada rosto. Cada atendimento é feito com atenção, higiene rigorosa e muito cuidado, respeitando a beleza única de cada cliente.</p>
+
+        <div class="block">
+          <div class="h">Especialidades</div>
+          <ul>
+            <li><svg><use href="#check"/></svg><div><b>Extensão de cílios</b><span>Técnicas do efeito natural ao volume marcante, fio a fio.</span></div></li>
+            <li><svg><use href="#check"/></svg><div><b>Design de sobrancelhas &amp; henna</b><span>Formato ideal, simetria e definição conforme o seu rosto.</span></div></li>
+            <li><svg><use href="#check"/></svg><div><b>Micropigmentação</b><span>Naturalidade que dura e praticidade no dia a dia.</span></div></li>
+            <li><svg><use href="#check"/></svg><div><b>Estética facial &amp; corporal</b><span>Limpeza de pele e Banho de Lua com clareamento de áreas escuras.</span></div></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <div class="h">Formação &amp; experiência</div>
+          <ul>
+            <li><svg><use href="#check"/></svg><div><b>Formação em Lash Design &amp; Sobrancelhas</b><span class="todo">Cursos e certificações · me envie para destacar aqui</span></div></li>
+            <li><svg><use href="#check"/></svg><div><b>Atuação no Studio Vanessa Garcia</b><span class="todo">Tempo de experiência · a confirmar · Sudoeste, Brasília</span></div></li>
+          </ul>
+        </div>
+
+        <blockquote>“Quando a gente ama o que faz, o trabalho vira missão. Meu maior resultado é a confiança de quem volta sempre.”</blockquote>
+        <a class="btn btn-primary" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20com%20voc%C3%AA." target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Agendar com a Vanessa</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROCESS ===== -->
+<section class="sec" id="processo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Do primeiro contato ao <span class="ac">resultado</span></h2>
+      <p>Um atendimento organizado e tranquilo, do agendamento à manutenção do seu resultado.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n"></div><h3>Agendamento</h3><p>Você escolhe o serviço e marca pelo WhatsApp, com hora marcada e sem filas.</p></div>
+      <div class="step reveal d1"><div class="n"></div><h3>Avaliação &amp; mapeamento</h3><p>Conversamos sobre o que você busca e faço o mapeamento do olhar e do rosto para o desenho ideal.</p></div>
+      <div class="step reveal d2"><div class="n"></div><h3>Aplicação</h3><p>Procedimento com técnica segura, materiais de qualidade e protocolo de higiene rigoroso.</p></div>
+      <div class="step reveal d3"><div class="n"></div><h3>Cuidados &amp; manutenção</h3><p>Oriento os cuidados em casa e os retornos para manter o resultado sempre impecável.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== SERVICES ===== -->
+<section class="sec bio" id="servicos" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Nossos serviços</span>
+      <h2>Tudo para valorizar o seu <span class="ac">rosto</span></h2>
+      <p>As técnicas e o desenho ideais são definidos no seu atendimento, sempre a partir do seu rosto e do seu gosto.</p>
+    </div>
+    <div class="cardgrid">
+      <article class="card reveal"><span class="ic"><svg><use href="#eye"/></svg></span><h3>Extensão de cílios</h3><p>O realce que faz você acordar pronta todos os dias. Fio a fio, do efeito natural ao volume marcante, com mapeamento do olhar e manutenção impecável.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20extens%C3%A3o%20de%20c%C3%ADlios.%20Quero%20agendar." target="_blank" rel="noopener">Agendar cílios <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d1"><span class="ic"><svg><use href="#brow"/></svg></span><h3>Design de sobrancelhas</h3><p>O formato ideal com simetria e proporção, respeitando os traços únicos do seu rosto. Com acabamento em henna para um olhar mais harmônico.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20design%20de%20sobrancelhas.%20Quero%20agendar." target="_blank" rel="noopener">Agendar sobrancelhas <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d2"><span class="ic"><svg><use href="#drop"/></svg></span><h3>Tintura de fios brancos</h3><p>Coloração das sobrancelhas que cobre os fios brancos com aspecto natural, uniforme e duradouro.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20na%20tintura%20de%20sobrancelhas." target="_blank" rel="noopener">Agendar tintura <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal"><span class="ic"><svg><use href="#spark"/></svg></span><h3>Micropigmentação</h3><p>Sobrancelhas e lábios com pigmento na medida certa: naturalidade que dura e praticidade no dia a dia.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20micropigmenta%C3%A7%C3%A3o.%20Quero%20agendar." target="_blank" rel="noopener">Agendar micropigmentação <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d1"><span class="ic"><svg><use href="#glow"/></svg></span><h3>Limpeza de pele</h3><p>Limpeza de pele facial e corporal para uma pele mais saudável, renovada e com brilho natural.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20em%20limpeza%20de%20pele." target="_blank" rel="noopener">Agendar limpeza <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d2"><span class="ic"><svg><use href="#moon"/></svg></span><h3>Banho de Lua</h3><p>Tratamento corporal com clareamento de áreas escuras, deixando a pele mais uniforme, macia e iluminada.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20no%20Banho%20de%20Lua." target="_blank" rel="noopener">Agendar Banho de Lua <svg><use href="#arrow"/></svg></a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="sec gallery" id="resultados">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Resultados</span>
+      <h2>Antes &amp; depois <span class="ac">de verdade</span></h2>
+      <p>Trabalhos reais do studio — sobrancelhas, micropigmentação e cílios. Resultados de clientes, publicados com autorização.</p>
+    </div>
+    <div class="ba-grid">
+      <figure class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/a-antes.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha antes do atendimento, mais fina e irregular"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/a-depois.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha depois: desenho definido e cílios valorizados"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Design de sobrancelhas + cílios</figcaption>
+      </figure>
+      <figure class="ba-card reveal d1">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/b-antes.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha natural antes do atendimento"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/b-depois.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha preenchida e cílios depois do atendimento"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Sobrancelha preenchida + cílios</figcaption>
+      </figure>
+      <figure class="ba-card reveal d2">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/c-antes.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha antes do design e da limpeza"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/c-depois.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha alinhada e limpa depois"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Design &amp; limpeza de sobrancelha</figcaption>
+      </figure>
+      <figure class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/d-antes.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha antes, mais clara"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/d-depois.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha marcada e cílios depois"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Sobrancelha marcada + cílios</figcaption>
+      </figure>
+      <figure class="ba-card reveal d1">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/e-antes.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha masculina antes do design"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/e-depois.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha masculina depois: desenho definido"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Sobrancelha masculina · design</figcaption>
+      </figure>
+    </div>
+
+    <h3 class="ba-sub reveal">Mais resultados</h3>
+    <div class="g-grid">
+      <div class="g-tile photo reveal"><img src="fotos/resultados/r-micro.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Micropigmentação de sobrancelha"><span class="lbl">Micropigmentação</span></div>
+      <div class="g-tile photo reveal d1"><img src="fotos/resultados/r-micro2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha com micropigmentação em técnica ombré"><span class="lbl">Micropigmentação · ombré</span></div>
+      <div class="g-tile photo reveal d2"><img src="fotos/resultados/r-design.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Design de sobrancelha definido"><span class="lbl">Design de sobrancelha</span></div>
+      <div class="g-tile photo reveal"><img src="fotos/resultados/r-design2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha definida e alinhada"><span class="lbl">Sobrancelha definida</span></div>
+      <div class="g-tile photo reveal d1"><img src="fotos/resultados/r-cilios.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Cílios e sobrancelha valorizando o olhar"><span class="lbl">Cílios + sobrancelha</span></div>
+      <div class="g-tile photo reveal d2"><img src="fotos/resultados/r-processo.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Processo de coloração de sobrancelha com henna"><span class="lbl">Processo &amp; higiene</span></div>
+      <div class="g-tile photo reveal"><img src="fotos/resultados/n-frontal.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha e cílios valorizando o olhar"><span class="lbl">Sobrancelha + cílios</span></div>
+      <div class="g-tile photo reveal d1"><img src="fotos/resultados/n-ombre.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Micropigmentação de sobrancelha ombré"><span class="lbl">Micropigmentação</span></div>
+      <div class="g-tile photo reveal d2"><img src="fotos/resultados/n-design.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Design de sobrancelha definido"><span class="lbl">Design de sobrancelha</span></div>
+      <div class="g-tile photo reveal"><img src="fotos/resultados/n-cilios.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha e cílios bem marcados"><span class="lbl">Sobrancelha + cílios</span></div>
+      <div class="g-tile photo reveal d1"><img src="fotos/resultados/n-lash.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Extensão de cílios fio a fio"><span class="lbl">Cílios · fio a fio</span></div>
+      <div class="g-tile photo reveal d2"><img src="fotos/resultados/n-olhar.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Olhar valorizado com sobrancelha e cílios"><span class="lbl">Olhar valorizado</span></div>
+    </div>
+
+    <h3 class="vid-sub reveal">Veja em movimento</h3>
+    <p class="vid-note reveal">Um pouquinho do atendimento, de pertinho. Toque para dar play.</p>
+    <div class="vid-grid">
+      <figure class="vid reveal">
+        <video controls preload="metadata" playsinline src="fotos/resultados/video1.mp4#t=2"></video>
+        <figcaption>Sobrancelhas · processo</figcaption>
+      </figure>
+      <figure class="vid reveal d1">
+        <video controls preload="metadata" playsinline src="fotos/resultados/video2.mp4#t=1.5"></video>
+        <figcaption>Resultado de pertinho</figcaption>
+      </figure>
+      <figure class="vid reveal d2">
+        <video controls preload="metadata" playsinline src="fotos/resultados/video3.mp4#t=4"></video>
+        <figcaption>Olhar marcante</figcaption>
+      </figure>
+      <figure class="vid reveal">
+        <video controls preload="metadata" playsinline src="fotos/resultados/video4.mp4#t=3"></video>
+        <figcaption>Cliente feliz</figcaption>
+      </figure>
+    </div>
+    <div class="center-cta reveal"><a class="btn btn-outline" href="https://instagram.com/ciliosvanessa_garcia" target="_blank" rel="noopener"><svg><use href="#ig"/></svg> Ver mais no Instagram</a></div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="sec" id="depoimentos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Depoimentos</span>
+      <h2>O que as <span class="ac">clientes</span> dizem</h2>
+      <p>O maior resultado é a confiança de quem volta sempre. Em breve, aqui entram os relatos reais das clientes do studio.</p>
+    </div>
+    <div class="q-grid">
+      <figure class="q-card reveal"><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>“Saí do studio me sentindo outra pessoa. Cílios perfeitos e um atendimento que é puro carinho. Virei cliente fiel.”</p><figcaption class="who"><span class="av">MC</span><span><b>Maria C.</b><small>Extensão de cílios · Brasília/DF</small></span></figcaption></figure>
+      <figure class="q-card reveal d1"><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>“A Vanessa entende exatamente o que o rosto pede. Minhas sobrancelhas nunca ficaram tão harmônicas.”</p><figcaption class="who"><span class="av">RS</span><span><b>Renata S.</b><small>Design &amp; henna · Brasília/DF</small></span></figcaption></figure>
+      <figure class="q-card reveal"><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>“Acordar pronta todos os dias mudou a minha rotina. Atendimento impecável, ambiente acolhedor e muita higiene.”</p><figcaption class="who"><span class="av">LF</span><span><b>Larissa F.</b><small>Micropigmentação · Brasília/DF</small></span></figcaption></figure>
+      <figure class="q-card reveal d1"><div class="stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div><p>“Profissionalismo e carinho em cada detalhe. Me senti acolhida e super segura com o resultado.”</p><figcaption class="who"><span class="av">CP</span><span><b>Camila P.</b><small>Extensão de cílios · Brasília/DF</small></span></figcaption></figure>
+    </div>
+    <p class="q-note">✦ Depoimentos ilustrativos — serão substituídos pelos relatos reais das clientes, com autorização.</p>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="sec bio" id="duvidas" style="background:var(--pink-wash)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Dúvidas</span>
+      <h2>Perguntas <span class="ac">frequentes</span></h2>
+      <p>As respostas para as dúvidas mais comuns. Ficou com outra pergunta? É só chamar no WhatsApp.</p>
+    </div>
+    <div class="faq reveal">
+      <details><summary>Quanto tempo duram os cílios? <span class="pl">+</span></summary><div class="a">A extensão acompanha o ciclo natural dos seus fios. Com os cuidados certos, o resultado se mantém bonito por semanas, e a manutenção repõe os fios que caem naturalmente.</div></details>
+      <details><summary>Preciso fazer manutenção? De quanto em quanto tempo? <span class="pl">+</span></summary><div class="a">Sim. A manutenção costuma ser feita a cada 2 ou 3 semanas, conforme o seu ciclo de cílios e a sua rotina. Combinamos o melhor intervalo no atendimento.</div></details>
+      <details><summary>A aplicação dói? <span class="pl">+</span></summary><div class="a">Não. A aplicação é indolor e confortável — muitas clientes até relaxam e dormem durante o procedimento. Tudo é feito com os olhos fechados e técnica segura.</div></details>
+      <details><summary>Posso molhar? Como cuidar no dia a dia? <span class="pl">+</span></summary><div class="a">Sim, com os cuidados corretos. Na aplicação você recebe todas as orientações: higienização dos fios, o que evitar e como prolongar o resultado.</div></details>
+      <details><summary>Qual é o protocolo de higiene? <span class="pl">+</span></summary><div class="a">A sua saúde vem em primeiro lugar: materiais de qualidade, descartáveis quando necessário e biossegurança rigorosa em todos os atendimentos.</div></details>
+      <details><summary>Quanto tempo leva o atendimento? <span class="pl">+</span></summary><div class="a">Depende do serviço escolhido. No agendamento eu informo a duração aproximada para você se organizar com tranquilidade.</div></details>
+      <details><summary>Como funciona o design com henna e a micropigmentação? <span class="pl">+</span></summary><div class="a">No design com henna, defino o formato ideal e aplico o pigmento para realçar e preencher as sobrancelhas. Já a micropigmentação é uma técnica de maior durabilidade, avaliada caso a caso no atendimento.</div></details>
+      <details><summary>Onde fica o studio e quais os horários? <span class="pl">+</span></summary><div class="a">O studio fica no Sudoeste, em Brasília/DF, com atendimento por hora marcada. Para o endereço completo e os horários disponíveis, fale comigo no WhatsApp.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXTRAS: CURSOS + BOUTIQUE ===== -->
+<section class="sec" id="estudio" style="background:var(--pink-wash)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Também no studio</span>
+      <h2>Mais do que um <span class="ac">atendimento</span></h2>
+      <p>Além dos cuidados com o seu olhar e a sua pele, o studio é também um espaço de formação e de beleza completo.</p>
+    </div>
+    <div class="cardgrid" style="grid-template-columns:1fr 1fr">
+      <article class="card reveal"><span class="ic"><svg><use href="#cap"/></svg></span><h3>Cursos &amp; formação</h3><p>Quer viver da beleza? Ministramos cursos de extensão de cílios e design de sobrancelhas, com técnica, biossegurança e atendimento — do primeiro passo ao profissional.</p><a class="btn-ghost-link more" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Tenho%20interesse%20nos%20cursos%20do%20studio." target="_blank" rel="noopener">Quero saber do curso <svg><use href="#arrow"/></svg></a></article>
+      <article class="card reveal d1"><span class="ic"><svg><use href="#bag"/></svg></span><h3>Boutique</h3><p>No studio você também encontra roupas e semijoias selecionadas para completar o seu look e realçar ainda mais a sua beleza.</p><a class="btn-ghost-link more" href="https://instagram.com/ciliosvanessa_garcia" target="_blank" rel="noopener">Ver novidades <svg><use href="#arrow"/></svg></a></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="sec final">
+  <div class="wrap reveal">
+    <h2>Vem realçar o seu olhar</h2>
+    <p>Me chama no WhatsApp pra tirar dúvidas ou já marcar o seu horário. Te ajudo a escolher o que faz mais sentido pra você, com todo o cuidado — e sem compromisso.</p>
+    <a class="btn btn-primary" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Agendar meu horário</a>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="sec contact" id="contato">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="eyebrow">Contato</span>
+        <h2 style="font-size:clamp(28px,3.6vw,44px)">Fale com o <span class="ac">studio</span></h2>
+        <p style="color:var(--ink-soft);margin-top:16px;max-width:44ch">Escolha o canal que preferir. Respondo com todo o carinho para encontrar o melhor horário para você.</p>
+        <div class="ways">
+          <a href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener"><span class="ic"><svg><use href="#wa"/></svg></span><span><b>WhatsApp</b><small>(61) 98190-7866 · resposta rápida</small></span></a>
+          <a href="https://instagram.com/ciliosvanessa_garcia" target="_blank" rel="noopener"><span class="ic"><svg><use href="#ig"/></svg></span><span><b>Instagram</b><small>@ciliosvanessa_garcia · veja os trabalhos</small></span></a>
+          <a href="https://maps.google.com/?q=Sudoeste+Bras%C3%ADlia+DF" target="_blank" rel="noopener"><span class="ic"><svg><use href="#pin"/></svg></span><span><b>Studio</b><small>Sudoeste — Brasília/DF · com hora marcada</small></span></a>
+          <a href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Quais%20os%20hor%C3%A1rios%20de%20atendimento?" target="_blank" rel="noopener"><span class="ic"><svg><use href="#clock"/></svg></span><span><b>Horários</b><small>Segunda a sábado · consulte disponibilidade</small></span></a>
+        </div>
+      </div>
+      <div class="form-card reveal d1">
+        <h3>Peça seu horário</h3>
+        <p class="fsub">Preencha e eu te chamo no WhatsApp para confirmar.</p>
+        <form id="bookForm" novalidate>
+          <div class="field" id="f-nome"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como posso te chamar?" required><span class="err">Por favor, me diga o seu nome.</span></div>
+          <div class="field" id="f-fone"><label for="fone">WhatsApp</label><input id="fone" name="fone" type="tel" inputmode="tel" autocomplete="tel" maxlength="16" placeholder="(61) 90000-0000" required><span class="err">Digite um WhatsApp válido com DDD.</span></div>
+          <div class="field"><label for="servico">Serviço de interesse</label><select id="servico" name="servico"><option>Extensão de cílios</option><option>Design de sobrancelhas</option><option>Tintura de fios brancos</option><option>Micropigmentação</option><option>Limpeza de pele</option><option>Banho de Lua</option><option>Cursos / formação</option><option>Ainda não sei / quero orientação</option></select></div>
+          <div class="field"><label for="msg">Mensagem (opcional)</label><textarea id="msg" name="msg" placeholder="Conte um pouco do que você procura…"></textarea></div>
+          <button class="btn btn-primary" type="submit"><svg><use href="#wa"/></svg> Enviar pelo WhatsApp</button>
+          <p class="fine">Ao enviar, abrimos o WhatsApp com a sua mensagem pronta.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <a class="brand" href="#top" aria-label="Studio Vanessa Garcia"><img class="logo-mk" src="fotos/face-gold.png" width="44" height="54" alt="" aria-hidden="true" decoding="async" loading="lazy"><span><b style="color:#fff">Vanessa Garcia</b><small>Lash Designer</small></span></a>
+        <p class="ft-about">Cílios, sobrancelhas, micropigmentação e estética facial e corporal com técnica, higiene e cuidado. Também cursos e boutique. Sudoeste, Brasília/DF.</p>
+        <div class="social"><a href="https://wa.me/5561981907866" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#wa"/></svg></a><a href="https://instagram.com/ciliosvanessa_garcia" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#ig"/></svg></a></div>
+      </div>
+      <div><h4>Navegação</h4><ul><li><a href="#sobre">A Vanessa</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#estudio">Cursos &amp; boutique</a></li><li><a href="#resultados">Resultados</a></li><li><a href="#duvidas">Dúvidas</a></li><li><a href="#contato">Contato</a></li></ul></div>
+      <div><h4>Contato</h4><ul><li><a href="https://wa.me/5561981907866" target="_blank" rel="noopener">WhatsApp (61) 98190-7866</a></li><li><a href="https://instagram.com/ciliosvanessa_garcia" target="_blank" rel="noopener">@ciliosvanessa_garcia</a></li><li><a href="https://maps.google.com/?q=Sudoeste+Bras%C3%ADlia+DF" target="_blank" rel="noopener">Sudoeste · Brasília/DF</a></li></ul></div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr"></span> Studio Vanessa Garcia · Estética e beleza em Brasília/DF</span>
+      <span>Sudoeste — Brasília/DF · (61) 98190-7866</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio." target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+var hdr=document.getElementById('hdr'),waFloat=document.getElementById('waFloat');
+function onScroll(){var y=window.scrollY;hdr.classList.toggle('scrolled',y>20);waFloat.classList.toggle('show',y>620);}
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+var menuBtn=document.getElementById('menuBtn'),mobileNav=document.getElementById('mobileNav');
+menuBtn.addEventListener('click',function(){var open=mobileNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);});
+mobileNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobileNav.classList.remove('open');menuBtn.setAttribute('aria-expanded',false);});});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
+// Ícones decorativos fora da árvore de acessibilidade
+document.querySelectorAll('svg').forEach(function(s){s.setAttribute('aria-hidden','true');s.setAttribute('focusable','false');});
+
+// Máscara de telefone (BR) + validação
+function digits(s){return (s||'').replace(/\D/g,'');}
+function maskPhone(v){v=digits(v).slice(0,11);
+  if(v.length<=10){return v.replace(/(\d{0,2})(\d{0,4})(\d{0,4}).*/,function(_,a,b,c){var o=a?'('+a+')':'';if(b)o+=' '+b;if(c)o+='-'+c;return o;});}
+  return v.replace(/(\d{2})(\d{5})(\d{0,4}).*/,'($1) $2-$3');}
+function setInvalid(id,bad){var f=document.getElementById(id);if(f)f.classList.toggle('invalid',bad);}
+var foneEl=document.getElementById('fone');
+if(foneEl)foneEl.addEventListener('input',function(){foneEl.value=maskPhone(foneEl.value);});
+['nome','fone'].forEach(function(id){var el=document.getElementById(id);if(el)el.addEventListener('input',function(){setInvalid('f-'+id,false);});});
+
+document.getElementById('bookForm').addEventListener('submit',function(ev){ev.preventDefault();
+  var nomeEl=document.getElementById('nome');
+  var nome=(nomeEl.value||'').trim();var fd=digits(foneEl.value);
+  var servico=document.getElementById('servico').value;var msg=(document.getElementById('msg').value||'').trim();
+  var ok=true;
+  if(fd.length<10){setInvalid('f-fone',true);foneEl.focus();ok=false;}else setInvalid('f-fone',false);
+  if(!nome){setInvalid('f-nome',true);nomeEl.focus();ok=false;}else setInvalid('f-nome',false);
+  if(!ok)return;
+  var txt='Olá Vanessa! Meu nome é '+nome+'. Tenho interesse em '+servico+'. Meu WhatsApp é '+foneEl.value.trim()+'.';
+  if(msg)txt+=' '+msg;
+  window.open('https://wa.me/5561981907866?text='+encodeURIComponent(txt),'_blank','noopener');
+});
+</script>
+</body>
+</html>
