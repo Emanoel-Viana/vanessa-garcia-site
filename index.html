@@ -239,9 +239,10 @@ nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
 /* vídeos (em movimento) */
 .vid-sub{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,25px);color:var(--ink);margin:54px 0 6px}
 .vid-note{text-align:center;color:var(--ink-soft);font-size:14.5px;margin:0 auto;max-width:48ch}
-.vid-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:28px auto 0;max-width:600px}
+.vid-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px auto 0;max-width:880px}
 .vid{margin:0;background:#140a0c;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
 .vid video{display:block;width:100%;aspect-ratio:478/850;object-fit:cover;background:#140a0c}
+.rail-hint{display:none;text-align:center;color:var(--pink);font-weight:600;font-size:13px;letter-spacing:.02em;margin:16px 0 2px}
 .vid figcaption{padding:12px 14px;text-align:center;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:14px;background:#fff}
 
 /* ===== TESTIMONIALS ===== */
@@ -332,15 +333,23 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   .hero-photo{order:-1;max-width:420px;margin:0 auto;aspect-ratio:16/11}
   .bio-photo{max-width:440px;margin:0 auto}
   .ba-card{flex-basis:100%;max-width:100%}
+  .vid-grid{grid-template-columns:repeat(2,1fr);max-width:520px}
   .q-grid{grid-template-columns:1fr}
   .mobile-nav.open{display:flex;flex-direction:column;padding:6px clamp(20px,5vw,56px) 22px;background:#fff;border-top:1px solid var(--line)}
   .mobile-nav.open a{padding:13px 0;border-bottom:1px solid var(--line);font-weight:500;color:#444}
   .mobile-nav.open a.cta{color:var(--pink);font-weight:700}
 }
 @media(max-width:560px){
-  .cardgrid,.steps,.g-grid,footer .grid{grid-template-columns:1fr}
-  .vid-grid{grid-template-columns:1fr;max-width:340px}
+  .cardgrid,.steps,footer .grid{grid-template-columns:1fr}
   .hero .cta .btn{width:100%}
+  /* carrosséis modernos com swipe (estilo stories) */
+  .g-grid,.vid-grid{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:none;margin-top:18px;
+    scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px 2px 14px;
+    scrollbar-width:none;-ms-overflow-style:none}
+  .g-grid::-webkit-scrollbar,.vid-grid::-webkit-scrollbar{display:none}
+  .g-grid .g-tile{flex:0 0 78%;scroll-snap-align:start}
+  .vid-grid .vid{flex:0 0 66%;scroll-snap-align:start}
+  .rail-hint{display:block}
 }
 /* ===== IMPRESSÃO / PDF ===== */
 @media print{
@@ -425,6 +434,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   <symbol id="pin" viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.9"/></symbol>
   <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M.06 24l1.69-6.16a11.86 11.86 0 01-1.6-5.95C.16 5.33 5.5 0 12.06 0a11.8 11.8 0 018.42 3.49 11.8 11.8 0 013.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 01-5.69-1.45L.06 24zM6.6 20.2l.36.22a9.86 9.86 0 005.03 1.38 9.9 9.9 0 009.89-9.9 9.82 9.82 0 00-2.9-7A9.82 9.82 0 0012.06 2a9.9 9.9 0 00-9.9 9.89c0 1.9.55 3.75 1.59 5.35l.24.38-1 3.65 3.6-.95zM17.5 14.3c-.08-.14-.3-.22-.63-.39-.33-.16-1.96-.97-2.26-1.08-.3-.11-.52-.16-.74.17-.22.33-.85 1.07-1.04 1.29-.19.22-.38.25-.71.08-.33-.16-1.4-.51-2.66-1.64-.98-.88-1.65-1.96-1.84-2.29-.19-.33-.02-.5.15-.67.15-.15.33-.38.49-.58.16-.19.22-.33.33-.55.11-.22.06-.41-.03-.58-.08-.16-.74-1.79-1.02-2.45-.27-.64-.54-.55-.74-.56l-.63-.01c-.22 0-.58.08-.88.41-.3.33-1.15 1.13-1.15 2.76 0 1.63 1.19 3.21 1.35 3.43.16.22 2.33 3.56 5.65 4.99.79.34 1.4.54 1.88.69.79.25 1.51.21 2.08.13.63-.09 1.96-.8 2.24-1.58.27-.77.27-1.43.19-1.57z"/></symbol>
   <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.9"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
 </svg>
@@ -532,8 +542,8 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
         <div class="block">
           <div class="h">Formação &amp; experiência</div>
           <ul>
-            <li><svg><use href="#check"/></svg><div><b>Formação em Lash Design &amp; Sobrancelhas</b><span class="todo">Cursos e certificações · me envie para destacar aqui</span></div></li>
-            <li><svg><use href="#check"/></svg><div><b>Atuação no Studio Vanessa Garcia</b><span class="todo">Tempo de experiência · a confirmar · Sudoeste, Brasília</span></div></li>
+            <li><svg><use href="#check"/></svg><div><b>Formação em Lash Design &amp; Sobrancelhas</b><span>Técnica, higiene rigorosa e acabamento natural em cada atendimento</span></div></li>
+            <li><svg><use href="#check"/></svg><div><b>Atuação no Studio Vanessa Garcia</b><span>Atendimento individualizado, com hora marcada — Sudoeste, Brasília/DF</span></div></li>
           </ul>
         </div>
 
@@ -627,6 +637,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
     </div>
 
     <h3 class="ba-sub reveal">Mais resultados</h3>
+    <p class="rail-hint">deslize para ver mais →</p>
     <div class="g-grid">
       <div class="g-tile photo reveal"><img src="fotos/resultados/r-micro.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Micropigmentação de sobrancelha"><span class="lbl">Micropigmentação</span></div>
       <div class="g-tile photo reveal d1"><img src="fotos/resultados/r-micro2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha com micropigmentação em técnica ombré"><span class="lbl">Micropigmentação · ombré</span></div>
@@ -644,6 +655,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
 
     <h3 class="vid-sub reveal">Veja em movimento</h3>
     <p class="vid-note reveal">Um pouquinho do atendimento, de pertinho. Toque para dar play.</p>
+    <p class="rail-hint">deslize para ver mais →</p>
     <div class="vid-grid">
       <figure class="vid reveal">
         <video controls preload="metadata" playsinline src="fotos/resultados/video1.mp4#t=2"></video>
@@ -788,9 +800,11 @@ document.getElementById('yr').textContent=new Date().getFullYear();
 var hdr=document.getElementById('hdr'),waFloat=document.getElementById('waFloat');
 function onScroll(){var y=window.scrollY;hdr.classList.toggle('scrolled',y>20);waFloat.classList.toggle('show',y>620);}
 window.addEventListener('scroll',onScroll,{passive:true});onScroll();
-var menuBtn=document.getElementById('menuBtn'),mobileNav=document.getElementById('mobileNav');
-menuBtn.addEventListener('click',function(){var open=mobileNav.classList.toggle('open');menuBtn.setAttribute('aria-expanded',open);});
-mobileNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobileNav.classList.remove('open');menuBtn.setAttribute('aria-expanded',false);});});
+var menuBtn=document.getElementById('menuBtn'),mobileNav=document.getElementById('mobileNav'),menuIcon=menuBtn.querySelector('use');
+function setMenu(open){mobileNav.classList.toggle('open',open);menuBtn.setAttribute('aria-expanded',open);menuBtn.setAttribute('aria-label',open?'Fechar menu':'Abrir menu');if(menuIcon)menuIcon.setAttribute('href',open?'#x':'#menu');}
+menuBtn.addEventListener('click',function(){setMenu(!mobileNav.classList.contains('open'));});
+mobileNav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){setMenu(false);});});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mobileNav.classList.contains('open'))setMenu(false);});
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el);});
 // Ícones decorativos fora da árvore de acessibilidade
@@ -816,7 +830,8 @@ document.getElementById('bookForm').addEventListener('submit',function(ev){ev.pr
   if(!ok)return;
   var txt='Olá Vanessa! Meu nome é '+nome+'. Tenho interesse em '+servico+'. Meu WhatsApp é '+foneEl.value.trim()+'.';
   if(msg)txt+=' '+msg;
-  window.open('https://wa.me/5561981907866?text='+encodeURIComponent(txt),'_blank','noopener');
+  var waUrl='https://wa.me/5561981907866?text='+encodeURIComponent(txt);
+  var w=window.open(waUrl,'_blank','noopener');if(!w)window.location.href=waUrl;
 });
 </script>
 </body>
