@@ -227,8 +227,8 @@ nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
 .ba-img{position:relative;aspect-ratio:1/1;overflow:hidden;background:var(--pink-soft)}
 .ba-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s}
 .ba-card:hover .ba-img img{transform:scale(1.045)}
-.ba-tag{position:absolute;top:10px;left:10px;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
-  background:rgba(255,255,255,.9);color:var(--ink-soft);padding:4px 11px;border-radius:999px}
+.ba-tag{position:absolute;top:10px;left:10px;z-index:2;font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  background:rgba(255,255,255,.92);color:var(--ink-soft);padding:4px 11px;border-radius:999px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
 .ba-tag.is-after{background:var(--pink);color:#fff}
 .ba-cap{padding:14px 18px;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:15px;text-align:center}
 .ba-sub{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,25px);color:var(--ink);margin:54px 0 0}
@@ -240,7 +240,7 @@ nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
 .vid-sub{text-align:center;font-family:"Playfair Display",serif;font-size:clamp(20px,3vw,25px);color:var(--ink);margin:54px 0 6px}
 .vid-note{text-align:center;color:var(--ink-soft);font-size:14.5px;margin:0 auto;max-width:48ch}
 .vid-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px auto 0;max-width:880px}
-.vid{margin:0;background:#140a0c;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
+.vid{position:relative;margin:0;background:#140a0c;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
 .vid video{display:block;width:100%;aspect-ratio:478/850;object-fit:cover;background:#140a0c}
 .rail-hint{display:none;text-align:center;color:var(--pink);font-weight:600;font-size:13px;letter-spacing:.02em;margin:16px 0 2px}
 .vid figcaption{padding:12px 14px;text-align:center;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:14px;background:#fff}
@@ -343,12 +343,13 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   .cardgrid,.steps,footer .grid{grid-template-columns:1fr}
   .hero .cta .btn{width:100%}
   /* carrosséis modernos com swipe (estilo stories) */
-  .g-grid,.vid-grid{display:flex;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:none;margin-top:18px;
+  .g-grid,.vid-grid,.ba-grid{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:none;margin-top:18px;
     scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px 2px 14px;
     scrollbar-width:none;-ms-overflow-style:none}
-  .g-grid::-webkit-scrollbar,.vid-grid::-webkit-scrollbar{display:none}
+  .g-grid::-webkit-scrollbar,.vid-grid::-webkit-scrollbar,.ba-grid::-webkit-scrollbar{display:none}
   .g-grid .g-tile{flex:0 0 78%;scroll-snap-align:start}
   .vid-grid .vid{flex:0 0 66%;scroll-snap-align:start}
+  .ba-grid .ba-card{flex:0 0 88%;max-width:none;scroll-snap-align:start}
   .rail-hint{display:block}
 }
 /* ===== IMPRESSÃO / PDF ===== */
@@ -598,6 +599,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
       <h2>Antes &amp; depois <span class="ac">de verdade</span></h2>
       <p>Trabalhos reais do studio — sobrancelhas, micropigmentação e cílios. Resultados de clientes, publicados com autorização.</p>
     </div>
+    <p class="rail-hint">deslize para ver mais →</p>
     <div class="ba-grid">
       <figure class="ba-card reveal">
         <div class="ba-pair">
@@ -634,22 +636,35 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
         </div>
         <figcaption class="ba-cap">Sobrancelha masculina · design</figcaption>
       </figure>
+      <figure class="ba-card reveal">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/r-micro.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha antes da micropigmentação"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/r-micro2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha depois da micropigmentação ombré"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Micropigmentação de sobrancelha</figcaption>
+      </figure>
+      <figure class="ba-card reveal d1">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/r-design.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha e cílios antes do atendimento"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/r-design2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha definida e cílios depois"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Sobrancelha + cílios</figcaption>
+      </figure>
+      <figure class="ba-card reveal d2">
+        <div class="ba-pair">
+          <div class="ba-img"><img src="fotos/resultados/r-cilios.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha masculina antes"><span class="ba-tag">Antes</span></div>
+          <div class="ba-img"><img src="fotos/resultados/r-processo.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha masculina depois do atendimento"><span class="ba-tag is-after">Depois</span></div>
+        </div>
+        <figcaption class="ba-cap">Sobrancelha masculina</figcaption>
+      </figure>
     </div>
 
     <h3 class="ba-sub reveal">Mais resultados</h3>
     <p class="rail-hint">deslize para ver mais →</p>
     <div class="g-grid">
-      <div class="g-tile photo reveal"><img src="fotos/resultados/r-micro.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Micropigmentação de sobrancelha"><span class="lbl">Micropigmentação</span></div>
-      <div class="g-tile photo reveal d1"><img src="fotos/resultados/r-micro2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha com micropigmentação em técnica ombré"><span class="lbl">Micropigmentação · ombré</span></div>
-      <div class="g-tile photo reveal d2"><img src="fotos/resultados/r-design.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Design de sobrancelha definido"><span class="lbl">Design de sobrancelha</span></div>
-      <div class="g-tile photo reveal"><img src="fotos/resultados/r-design2.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha definida e alinhada"><span class="lbl">Sobrancelha definida</span></div>
-      <div class="g-tile photo reveal d1"><img src="fotos/resultados/r-cilios.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Cílios e sobrancelha valorizando o olhar"><span class="lbl">Cílios + sobrancelha</span></div>
-      <div class="g-tile photo reveal d2"><img src="fotos/resultados/r-processo.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Processo de coloração de sobrancelha com henna"><span class="lbl">Processo &amp; higiene</span></div>
       <div class="g-tile photo reveal"><img src="fotos/resultados/n-frontal.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha e cílios valorizando o olhar"><span class="lbl">Sobrancelha + cílios</span></div>
-      <div class="g-tile photo reveal d1"><img src="fotos/resultados/n-ombre.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Micropigmentação de sobrancelha ombré"><span class="lbl">Micropigmentação</span></div>
       <div class="g-tile photo reveal d2"><img src="fotos/resultados/n-design.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Design de sobrancelha definido"><span class="lbl">Design de sobrancelha</span></div>
       <div class="g-tile photo reveal"><img src="fotos/resultados/n-cilios.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha e cílios bem marcados"><span class="lbl">Sobrancelha + cílios</span></div>
-      <div class="g-tile photo reveal d1"><img src="fotos/resultados/n-lash.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Extensão de cílios fio a fio"><span class="lbl">Cílios · fio a fio</span></div>
       <div class="g-tile photo reveal d2"><img src="fotos/resultados/n-olhar.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Olhar valorizado com sobrancelha e cílios"><span class="lbl">Olhar valorizado</span></div>
     </div>
 
@@ -658,12 +673,14 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
     <p class="rail-hint">deslize para ver mais →</p>
     <div class="vid-grid">
       <figure class="vid reveal">
+        <span class="ba-tag">Antes</span>
         <video controls preload="metadata" playsinline src="fotos/resultados/video1.mp4#t=2"></video>
-        <figcaption>Sobrancelhas · processo</figcaption>
+        <figcaption>Cílios · antes</figcaption>
       </figure>
       <figure class="vid reveal d1">
+        <span class="ba-tag is-after">Depois</span>
         <video controls preload="metadata" playsinline src="fotos/resultados/video2.mp4#t=1.5"></video>
-        <figcaption>Resultado de pertinho</figcaption>
+        <figcaption>Cílios · depois</figcaption>
       </figure>
       <figure class="vid reveal d2">
         <video controls preload="metadata" playsinline src="fotos/resultados/video3.mp4#t=4"></video>
