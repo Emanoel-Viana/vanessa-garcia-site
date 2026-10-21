@@ -180,6 +180,12 @@ nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
 .card p{color:var(--ink-soft);font-size:15.5px}
 .card .more{margin-top:18px;display:inline-flex}
 .center-cta{text-align:center;margin-top:30px}
+/* visagismo — grade de formatos de rosto */
+.face-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:38px}
+.face-grid .card{padding:28px 22px;text-align:center}
+.face-grid .card .ic{margin:0 auto 18px}
+.face-grid .card h3{font-size:18px;margin-bottom:8px}
+.face-grid .card p{font-size:14.5px}
 
 /* ===== BIO ===== */
 .bio{background:var(--pink-wash)}
@@ -322,7 +328,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
 
 /* ===== RESPONSIVE ===== */
 @media(max-width:940px){
-  .cardgrid,.steps{grid-template-columns:1fr 1fr}
+  .cardgrid,.steps,.face-grid{grid-template-columns:1fr 1fr}
   .g-grid{grid-template-columns:1fr 1fr}
   footer .grid{grid-template-columns:1fr 1fr}
 }
@@ -572,6 +578,40 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   </div>
 </section>
 
+<!-- ===== VISAGISMO ===== -->
+<section class="sec" id="visagismo" style="background:var(--white)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Visagismo</span>
+      <h2>Cada rosto pede um <span class="ac">olhar</span></h2>
+      <p>Não existe fórmula pronta. Eu desenho o formato a partir do seu rosto, das suas proporções e do que combina com você — por isso o resultado fica natural e só seu. Veja como o formato do rosto guia o desenho ideal:</p>
+    </div>
+    <div class="face-grid">
+      <div class="card reveal">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="6.5" ry="9"/></svg></div>
+        <h3>Rosto oval</h3>
+        <p>O mais equilibrado: pede um arco suave, que acompanha a harmonia natural dos traços.</p>
+      </div>
+      <div class="card reveal d1">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8.5"/></svg></div>
+        <h3>Rosto redondo</h3>
+        <p>Um arco mais marcado alonga e afina o visual, trazendo definição ao olhar.</p>
+      </div>
+      <div class="card reveal d2">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4.5" y="4.5" width="15" height="15" rx="4"/></svg></div>
+        <h3>Rosto quadrado</h3>
+        <p>Um arco levemente arredondado suaviza os traços mais angulares, com delicadeza.</p>
+      </div>
+      <div class="card reveal d3">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20.5S4.5 15.6 4.5 10.2A3.8 3.8 0 0 1 12 7.6a3.8 3.8 0 0 1 7.5 2.6c0 5.4-7.5 10.3-7.5 10.3z"/></svg></div>
+        <h3>Rosto coração</h3>
+        <p>Um arco suave e mais fino equilibra a testa e valoriza a parte de baixo do rosto.</p>
+      </div>
+    </div>
+    <div class="center-cta reveal"><a class="btn btn-primary" href="https://wa.me/5561981907866?text=Ol%C3%A1%20Vanessa!%20Quero%20descobrir%20o%20formato%20de%20sobrancelha%20ideal%20pro%20meu%20rosto." target="_blank" rel="noopener"><svg><use href="#wa"/></svg> Descobrir o meu formato</a></div>
+  </div>
+</section>
+
 <!-- ===== SERVICES ===== -->
 <section class="sec bio" id="servicos" style="background:var(--white)">
   <div class="wrap">
@@ -729,6 +769,10 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
       <details><summary>Qual é o protocolo de higiene? <span class="pl">+</span></summary><div class="a">A sua saúde vem em primeiro lugar: materiais de qualidade, descartáveis quando necessário e biossegurança rigorosa em todos os atendimentos.</div></details>
       <details><summary>Quanto tempo leva o atendimento? <span class="pl">+</span></summary><div class="a">Depende do serviço escolhido. No agendamento eu informo a duração aproximada para você se organizar com tranquilidade.</div></details>
       <details><summary>Como funciona o design com henna e a micropigmentação? <span class="pl">+</span></summary><div class="a">No design com henna, defino o formato ideal e aplico o pigmento para realçar e preencher as sobrancelhas. Já a micropigmentação é uma técnica de maior durabilidade, avaliada caso a caso no atendimento.</div></details>
+      <details><summary>Quanto custa? Como funciona o orçamento? <span class="pl">+</span></summary><div class="a">O valor depende do serviço escolhido e do que o seu olhar pede. Me chama no WhatsApp que passo o orçamento certinho, sem compromisso.</div></details>
+      <details><summary>Posso fazer grávida, lactante ou com pele sensível? <span class="pl">+</span></summary><div class="a">Alguns procedimentos pedem cuidados específicos nesses casos. Me conta um pouco sobre você antes de agendar que eu avalio, com segurança, o que é mais indicado para o seu momento.</div></details>
+      <details><summary>Você atende homens? <span class="pl">+</span></summary><div class="a">Sim! Cuidar do olhar e das sobrancelhas é para todo mundo. Atendo homens com o mesmo capricho — um design natural, que respeita os traços e valoriza a expressão.</div></details>
+      <details><summary>E se eu não gostar do resultado? <span class="pl">+</span></summary><div class="a">Antes de começar, a gente alinha juntas o formato e a intensidade, e eu só sigo com a sua aprovação. Meu compromisso é com um resultado que faça você se sentir bem.</div></details>
       <details><summary>Onde fica o studio e quais os horários? <span class="pl">+</span></summary><div class="a">O studio fica no Sudoeste, em Brasília/DF, com atendimento por hora marcada. Para o endereço completo e os horários disponíveis, fale comigo no WhatsApp.</div></details>
     </div>
   </div>
