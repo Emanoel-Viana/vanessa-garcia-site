@@ -266,7 +266,10 @@ nav.main a:hover{color:var(--pink)}nav.main a:hover::after{width:100%}
 .vid-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:28px auto 0;max-width:880px}
 .vid{position:relative;margin:0;background:#140a0c;border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm)}
 .vid video{display:block;width:100%;aspect-ratio:478/850;object-fit:cover;background:#140a0c}
-.rail-hint{display:none;text-align:center;color:var(--pink);font-weight:600;font-size:13px;letter-spacing:.02em;margin:16px 0 2px}
+.rail-hint{display:none;text-align:center;color:var(--pink);font-weight:700;font-size:13.5px;letter-spacing:.02em;margin:16px 0 2px}
+.rail-hint .rail-arrows{display:inline-block;margin-left:5px;animation:railnudge 1.2s ease-in-out infinite}
+@keyframes railnudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+@media(prefers-reduced-motion:reduce){.rail-hint .rail-arrows{animation:none}}
 .vid figcaption{padding:12px 14px;text-align:center;font-family:"Playfair Display",serif;font-style:italic;color:var(--ink-soft);font-size:14px;background:#fff}
 
 /* ===== TESTIMONIALS ===== */
@@ -369,11 +372,12 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
   /* carrosséis modernos com swipe (estilo stories) */
   .g-grid,.vid-grid,.ba-grid{display:flex;flex-wrap:nowrap;justify-content:flex-start;gap:12px;overflow-x:auto;overflow-y:hidden;max-width:none;margin-top:18px;
     scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:2px 2px 14px;
-    scrollbar-width:none;-ms-overflow-style:none}
+    scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-mask-image:linear-gradient(to right,#000 86%,rgba(0,0,0,.25));mask-image:linear-gradient(to right,#000 86%,rgba(0,0,0,.25))}
   .g-grid::-webkit-scrollbar,.vid-grid::-webkit-scrollbar,.ba-grid::-webkit-scrollbar{display:none}
   .g-grid .g-tile{flex:0 0 78%;scroll-snap-align:start}
   .vid-grid .vid{flex:0 0 66%;scroll-snap-align:start}
-  .ba-grid .ba-card{flex:0 0 88%;max-width:none;scroll-snap-align:start}
+  .ba-grid .ba-card{flex:0 0 84%;max-width:none;scroll-snap-align:start}
   .rail-hint{display:block}
 }
 /* ===== IMPRESSÃO / PDF ===== */
@@ -706,7 +710,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
       <h2>Antes &amp; depois <span class="ac">de verdade</span></h2>
       <p>Trabalhos reais do studio — sobrancelhas, micropigmentação e cílios. Resultados de clientes, publicados com autorização.</p>
     </div>
-    <p class="rail-hint">deslize para ver mais →</p>
+    <p class="rail-hint">Arraste para o lado <span class="rail-arrows">→</span></p>
     <div class="ba-grid">
       <figure class="ba-card reveal">
         <div class="ba-pair">
@@ -767,7 +771,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
     </div>
 
     <h3 class="ba-sub reveal">Mais resultados</h3>
-    <p class="rail-hint">deslize para ver mais →</p>
+    <p class="rail-hint">Arraste para o lado <span class="rail-arrows">→</span></p>
     <div class="g-grid">
       <div class="g-tile photo reveal"><img src="fotos/resultados/n-frontal.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Sobrancelha e cílios valorizando o olhar"><span class="lbl">Sobrancelha + cílios</span></div>
       <div class="g-tile photo reveal d2"><img src="fotos/resultados/n-design.jpg" width="820" height="820" loading="lazy" decoding="async" alt="Design de sobrancelha definido"><span class="lbl">Design de sobrancelha</span></div>
@@ -777,7 +781,7 @@ footer .copy{padding-top:22px;display:flex;justify-content:space-between;gap:14p
 
     <h3 class="vid-sub reveal">Veja em movimento</h3>
     <p class="vid-note reveal">Um pouquinho do atendimento, de pertinho. Toque para dar play.</p>
-    <p class="rail-hint">deslize para ver mais →</p>
+    <p class="rail-hint">Arraste para o lado <span class="rail-arrows">→</span></p>
     <div class="vid-grid">
       <figure class="vid reveal">
         <span class="ba-tag">Antes</span>
